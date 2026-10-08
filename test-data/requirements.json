@@ -1,0 +1,18 @@
+[
+  {
+    "id": "AUTH-01",
+    "description": "The public standard_user demo account reaches inventory after login."
+  },
+  {
+    "id": "AUTH-02",
+    "description": "Invalid or missing login credentials show an error; locked_out_user cannot sign in."
+  },
+  {
+    "id": "INV-02",
+    "description": "The four native dropdown options sort actual product names and numeric prices."
+  },
+  {
+    "id": "CHECK-02",
+    "description": "Checkout shows the sum of actual displayed product prices; total equals displayed subtotal plus displayed tax."
+  }
+]

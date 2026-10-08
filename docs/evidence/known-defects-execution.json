@@ -1,0 +1,163 @@
+{
+  "recordedAt": "2026-10-08T13:58:06.340Z",
+  "stats": {
+    "startTime": "2026-10-08T13:57:56.600Z",
+    "duration": 9456.17,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "[DEF-01] problem persona cannot retain last name and is blocked at checkout",
+      "file": "ui/personas/personas.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5352,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "defect-DEF-01",
+              "contentType": "image/png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[DEF-02] error persona advances with rejected empty last name",
+      "file": "ui/personas/personas.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2810,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "defect-DEF-02",
+              "contentType": "image/png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[DEF-03] visual persona substitutes the backpack image",
+      "file": "ui/personas/personas.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4981,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "image-comparison",
+              "contentType": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "verifiedAt": "2026-10-08T14:10:12.048Z",
+  "stats": {
+    "total": 77,
+    "passed": 76,
+    "skipped": 1
+  },
+  "pageErrors": [],
+  "aria": "- button \"Report\":\n  - img\n  - text: Report\n  - img\n- button:\n  - img\n- button:\n  - img\n- img\n- heading \"SauceDemo QA + Companion API\" [level=2]\n- text: October 8, 2026 at 7:33:14 PM (1m 14s)\n- article:\n  - img:\n    - img \"76 passed (98.7% of all tests)\"\n    - img \"1 skipped (1.29% of all tests)\"\n  - 'img \"Success rate: 100%\"': 100%\n- button \"Results 77\"\n- button \"Quality Gates 0\"\n- button \"Global Attachments 0\"\n- button \"Global Errors 0\"\n- button \"Total 77\" [pressed]\n- button \"Flaky tests -\":\n  - text: Flaky tests\n  - img\n  - text: \"-\"\n- button \"New tests -\":\n  - text: New tests\n  - img\n  - text: \"-\"\n- button \"Retried tests -\":\n  - text: Retried tests\n  - img\n  - text: \"-\"\n- button \"Passed 76\"\n- button \"Skipped 1\"\n- button \"Metadata 6\":\n  - text: Metadata 6\n  - img\n- text: executor Local verified execution application SauceDemo + independent local companion service ui_url https://www.saucedemo.com node_version v24.14.0 operating_system win32 execution Local\n- img\n- textbox \"Search tests\"\n- button \"Resolution\":\n  - img\n  - text: Resolution\n  - img\n- button \"Transition\":\n  - text: Transition\n  - img\n- button \"Severity\":\n  - text: Severity\n  - img\n- button \"Tags\":\n  - text: Tags\n  - img\n- button \"Total 77\"\n- button \"Passed 76\"\n- button \"Skipped 1\"\n- text: \"Sort by:\"\n- button \"Order Earliest\":\n  - text: Order Earliest\n  - img\n- button \"Expand all\":\n  - img\n- button:\n  - img\n- text: SauceDemo\n- button:\n  - img\n- text: \"48\"\n- button:\n  - img\n- text: Independent companion service\n- button:\n  - img\n- text: \"13\"\n- button:\n  - img\n- text: AI quality\n- button:\n  - img\n- text: 15 1\n- link \"Powered by Allure Report\":\n  - /url: https://allurereport.org\n  - text: Powered by\n  - img\n  - text: Allure Report\n- button \"Eng\":\n  - text: Eng\n  - img\n- text: \"Generated 10/8/2026 at 19:38:42 Ver: 3.20.1\"\n- button \"?\"\n- text: \"76 passed (98.7% of all tests) 1 skipped (1.29% of all tests) Success rate: 100% Calculated from passed, failed, and broken tests. Skipped and unknown tests are excluded. Show test results that have the specified tags\"",
+  "nativePortfolioHtml": true,
+  "historyEntries": 3,
+  "environmentMetadata": true,
+  "executorMetadata": true
+}

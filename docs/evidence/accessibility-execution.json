@@ -1,0 +1,259 @@
+{
+  "recordedAt": "2026-10-08T13:58:16.613Z",
+  "stats": {
+    "startTime": "2026-10-08T13:58:07.766Z",
+    "duration": 8511.015,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "[A11Y-01] WCAG-oriented audit of login",
+      "file": "accessibility/audit.spec.ts",
+      "project": "accessibility",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2898,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "axe-audit",
+              "contentType": "application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[A11Y-01] WCAG-oriented audit of inventory",
+      "file": "accessibility/audit.spec.ts",
+      "project": "accessibility",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2613,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "axe-audit",
+              "contentType": "application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[A11Y-01] WCAG-oriented audit of cart",
+      "file": "accessibility/audit.spec.ts",
+      "project": "accessibility",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1982,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "axe-audit",
+              "contentType": "application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[A11Y-01] WCAG-oriented audit of checkout",
+      "file": "accessibility/audit.spec.ts",
+      "project": "accessibility",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2423,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "axe-audit",
+              "contentType": "application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[A11Y-01] login controls follow keyboard focus order",
+      "file": "accessibility/audit.spec.ts",
+      "project": "accessibility",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1937,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

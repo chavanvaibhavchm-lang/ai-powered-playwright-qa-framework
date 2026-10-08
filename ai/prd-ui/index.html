@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local PRD review</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>PRD → Requirements → Test scenarios</h1>
+      <p>
+        Documents stay on this computer. Local Ollama: qwen2.5:1.5b. Scenarios require human review.
+      </p>
+      <label for="file">PRD file (PDF, DOCX, TXT or Markdown; up to 10 MB)</label
+      ><input id="file" type="file" accept=".pdf,.docx,.txt,.md,.markdown" />
+      <div class="actions">
+        <button id="upload">Upload PRD</button
+        ><button id="extract" disabled>Extract Requirements</button
+        ><button id="save" disabled>Save Requirement Review</button
+        ><button id="generate" disabled>Generate AI Test Scenarios</button>
+      </div>
+      <p id="message" role="status" aria-live="polite"></p>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Description (editable)</th>
+              <th>Source and evidence</th>
+              <th>Ambiguity warning</th>
+              <th>Review</th>
+            </tr>
+          </thead>
+          <tbody id="requirements"></tbody>
+        </table>
+      </div>
+      <h2>Generated scenarios</h2>
+      <p>
+        Pending human review. Quality findings appear below. Invalid scenarios need editing and
+        revalidation before approval. Existing drafts are never replaced by full-batch regeneration.
+      </p>
+      <pre id="output"></pre>
+      <button id="deduplicate-scenarios" hidden disabled>Remove Exact Duplicate Scenarios</button>
+      <pre id="scenario-coverage" aria-label="Requirement scenario coverage"></pre>
+      <div id="scenario-review"></div>
+      <p id="scenario-message" role="status" aria-live="polite"></p>
+      <button id="revalidate-scenarios" disabled>Revalidate Scenarios</button>
+      <button id="save-scenarios" disabled>Save Scenario Approvals</button>
+      <h2>Application and inspection scope</h2>
+      <p id="project-id"></p>
+      <label>Application name <input id="application-name" maxlength="100" /></label>
+      <label
+        >Application URL
+        <input id="application-url" type="url" placeholder="https://your-application.example/"
+      /></label>
+      <label
+        >Existing POM directory (project-relative, optional)
+        <input id="pom-directory" placeholder="pages"
+      /></label>
+      <label
+        >Local storage state (optional; never sent to AI)
+        <input id="storage-state" placeholder=".local/auth/session.json"
+      /></label>
+      <label
+        ><input id="allow-local" type="checkbox" /> Allow inspection of loopback development
+        servers</label
+      >
+      <label
+        >Additional approved page URLs (same origin, one per line, maximum four)
+        <textarea id="approved-pages"></textarea>
+      </label>
+      <p>
+        Saving this configuration explicitly approves the listed page scope. Discovery does not
+        click or submit forms. Changing scope invalidates generated code approvals.
+      </p>
+      <button id="save-application" disabled>Save Configuration and Approve Page Scope</button>
+      <button id="inspect-application" disabled>Inspect Application</button>
+      <pre id="inspection-summary" aria-label="Inspection evidence summary"></pre>
+      <pre id="inspection"></pre>
+      <h2>Automation code review</h2>
+      <p id="generation-help" role="status"></p>
+      <div id="generation-loader" class="loading-panel" hidden>
+        <span class="spinner" aria-hidden="true"></span
+        ><span>Generating automation tests with local Ollama. This may take several minutes.</span>
+      </div>
+      <p id="generation-message" role="status" aria-live="polite"></p>
+      <button id="generate-code" disabled>Generate Automation Tests</button>
+      <label>Human reviewer <input id="reviewer" maxlength="100" /></label>
+      <p>
+        Review each scenario, verified references and code diff. Approval copies that test to the
+        isolated approved directory. Execution requires the separate Run button.
+      </p>
+      <div id="code-review"></div>
+      <button id="run-approved" disabled>Run Selected Approved Tests</button>
+      <h2>Execution and requirement coverage</h2>
+      <div id="report-links"></div>
+      <pre id="traceability"></pre>
+    </main>
+  </body>
+</html>

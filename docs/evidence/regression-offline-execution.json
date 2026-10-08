@@ -1,0 +1,3103 @@
+{
+  "recordedAt": "2026-10-08T13:56:36.405Z",
+  "stats": {
+    "startTime": "2026-10-08T13:55:42.242Z",
+    "duration": 52719.06,
+    "expected": 66,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "Verify successful login to SauceDemo",
+      "file": "login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1655,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-03] password is masked and keyboard login works",
+      "file": "ui/auth/auth.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2433,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-03] inventory refresh preserves session and logout revokes access",
+      "file": "ui/auth/auth.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2527,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-03] unauthenticated direct inventory navigation is rejected",
+      "file": "ui/auth/auth.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4199,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CART-01] multiple items retain identity, price and badge after refresh",
+      "file": "ui/cart/cart.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2289,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CART-01] single item can be removed from the cart",
+      "file": "ui/cart/cart.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1335,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CART-01] empty cart has navigation controls without fabricated empty-cart policy",
+      "file": "ui/cart/cart.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1478,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-02] completes 1-item checkout with verified arithmetic",
+      "file": "ui/checkout/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2006,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-02] completes 2-item checkout with verified arithmetic",
+      "file": "ui/checkout/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2990,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-02] cancel from information returns to cart and overview returns to inventory",
+      "file": "ui/checkout/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1778,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[PDF-01] completed demo order downloads a nonempty PDF artifact",
+      "file": "ui/checkout/download.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2673,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "demo-order-pdf",
+              "contentType": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[DYN-01] lazy catalog loads more product cards when scrolling to its sentinel",
+      "file": "ui/inventory/dynamic.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2587,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[DYN-01] spinner disappears and loaded product content becomes visible",
+      "file": "ui/inventory/dynamic.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4654,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[DYN-01] slider selects the requested product with a named control",
+      "file": "ui/inventory/dynamic.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3420,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[INV-01] catalog contains six complete products with loaded images",
+      "file": "ui/inventory/inventory.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1212,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[INV-02] all four dropdown choices sort actual names and numeric prices",
+      "file": "ui/inventory/inventory.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1415,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[INV-01] every product detail matches its inventory card and back returns",
+      "file": "ui/inventory/inventory.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2429,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CART-01] details add/remove stays consistent with inventory and cart",
+      "file": "ui/inventory/inventory.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1637,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[NAV-01] menu opens, closes, links to About and returns to All Items",
+      "file": "ui/navigation/navigation.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3607,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[NAV-01] reset clears cart after navigation and refresh",
+      "file": "ui/navigation/navigation.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2741,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[NAV-01] browser back and forward retain selected product and cart",
+      "file": "ui/navigation/navigation.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1594,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-01] missing firstName blocks checkout",
+      "file": "ui/negative/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4848,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-01] missing lastName blocks checkout",
+      "file": "ui/negative/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1344,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-01] missing postalCode blocks checkout",
+      "file": "ui/negative/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4803,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-01] observes Unicode and special characters",
+      "file": "ui/negative/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1581,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-01] observes long nonempty values",
+      "file": "ui/negative/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1502,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[CHECK-01] observes whitespace-only fields (observed demo behavior)",
+      "file": "ui/negative/checkout.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1489,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects wrong username",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1013,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects wrong password",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2054,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects missing username",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2251,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects missing password",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1110,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects both fields empty",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2084,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects locked account",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2070,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects whitespace credentials",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2143,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects special characters",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1996,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AUTH-02] rejects long username",
+      "file": "ui/negative/login.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1047,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[PERS-01] performance persona reaches inventory with a generous timeout",
+      "file": "ui/personas/personas.spec.ts",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6513,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "login-duration",
+              "contentType": "application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[RESP-01] small mobile viewport supports login, cart and checkout",
+      "file": "ui/responsive/mobile.spec.ts",
+      "project": "mobile-chromium",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1520,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] health and deterministic products are independent of SauceDemo",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 145,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] create, read, update and delete order with calculated cents",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 122,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-02] SQLite order survives closing and reopening its database",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 74,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] rejects empty items without persisting an order",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 58,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] rejects zero quantity without persisting an order",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 58,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] rejects fractional quantity without persisting an order",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 59,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] rejects excess quantity without persisting an order",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 59,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] rejects unknown product without persisting an order",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 47,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] rejects duplicate product without persisting an order",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 49,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] rejects blank customer without persisting an order",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 69,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] rejects unexpected property without persisting an order",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 158,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] malformed JSON, media type, payload size and routes return explicit errors",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 68,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[API-01] invalid updates and nonexistent order operations do not change persisted state",
+      "file": "api/orders.spec.ts",
+      "project": "api",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 75,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-03] optional live local Ollama suggestion evaluation",
+      "file": "ai/local-live.spec.ts",
+      "project": "ai",
+      "status": "skipped",
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 100,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-01] deterministic provider produces schema-validated traceable suggestions",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 17,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] malformed JSON and markdown code fences are rejected",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 12,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] rejects missing scenarios",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 12,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] rejects empty scenarios",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] rejects invalid priority",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] rejects unexpected generated code",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 14,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] rejects empty steps",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] rejects whitespace title",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 11,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] missing, malformed and duplicate requirements fail before calling provider",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 11,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] unknown requirements and duplicate scenario IDs are rejected",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] equivalent suggestion titles are deduplicated deterministically",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 69,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-03] approved suggestions require reviewer and explicit valid selection",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 11,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-01] local adapter sends schema and parses mocked Ollama response",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 18,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] adapter rejects HTTP failures, missing response text and nonlocal endpoints",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 12,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[AI-02] excessive output is rejected before JSON parsing",
+      "file": "ai/scenarios.spec.ts",
+      "project": "ai",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

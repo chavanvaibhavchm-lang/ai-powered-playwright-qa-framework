@@ -1,0 +1,65 @@
+name: QA quality gates
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+  schedule:
+    - cron: '30 3 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: qa-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  quality:
+    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        id: install
+        run: npm ci
+      - name: Typecheck, lint and formatting
+        run: |
+          npm run typecheck
+          npm run lint
+          npm run format:check
+      - name: Install Chromium only
+        run: npx playwright install --with-deps chromium
+      - name: Clean current Allure results
+        run: npm run allure:clean
+      - name: Smoke, offline API and deterministic AI gates
+        run: npm run test:ci
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() }}
+        with:
+          name: quality-gate-evidence-${{ github.run_number }}
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Broader regression
+        if: ${{ (github.event_name == 'workflow_dispatch' || github.event_name == 'schedule') && !cancelled() }}
+        run: npm run test:regression
+      - name: Generate Allure report from actual results
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npm run allure:generate
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() }}
+        with:
+          name: qa-evidence-${{ github.run_number }}
+          path: |
+            playwright-report/
+            allure-results/
+            allure-report/
+            test-results/
+            test-history/
+          retention-days: 14
+          if-no-files-found: warn

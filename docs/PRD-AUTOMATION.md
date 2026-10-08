@@ -1,0 +1,45 @@
+# PRD automation workflow
+
+Launch with npm run prd:start and open http://127.0.0.1:3210. Local Ollama must have qwen2.5:1.5b installed for live extraction and generation. No new dependencies are required. Run npm run test:prd and npm run typecheck for verification; automated tests mock Ollama.
+
+1. Upload a PDF, DOCX, TXT or Markdown PRD. Extract requirements, edit them, approve the selected rows and save review.
+2. Generate scenarios once. Inspect each scenario's quality findings and requirement mapping. Edit the title, expected result or one-step-per-line steps, then Save Changes and Revalidate; **Revalidate Scenarios** reruns the quality and traceability checks for the full draft. Valid scenarios can be approved independently; scenarios with blocking findings show `needs-fix` and cannot be approved for automation. One targeted AI correction can be attempted per invalid scenario, with existing steps only removable and business expectations/IDs immutable. The workflow does not replace existing drafts with another full-batch generation.
+3. Enter application name and URL, optionally a project-relative POM directory. Save Configuration and Approve Page Scope. Additional page URLs must be explicitly listed, share the same origin and number at most four. The inspection starts at the configured URL; to inspect another approved page, set it as the application URL and inspect again. Reconfiguration invalidates inspection and code approvals.
+4. Inspect Application. The panel shows page metadata, visible controls, form IDs, navigation links, locator evidence and POM signatures. No clicks or submissions occur during discovery. Ambiguous controls have no usable locator.
+5. Generate Automation Tests. The small local model receives one approved scenario at a time and a bounded relevant evidence inventory. It returns a strict JSON plan; the framework renders TypeScript, parses syntax and checks imports/types without executing candidates. Unsupported or missing evidence is BLOCKED with a reason.
+6. Compare scenario, verified locator/POM references and full added-file diff. Enter a reviewer name and approve or reject each candidate separately. Approval does not execute code.
+7. Select approved tests and press Run Selected Approved Tests. Review execution results, traceability and report links. A run uses the existing Playwright configuration as its base, a dedicated Chromium project, a fresh proxy, one worker, no retries and isolated report directories. At most ten tests run for at most five minutes. Allure generation is a separate bounded fixed command; its failure is recorded in allure.log.
+
+Projects persist under .local/prd/<project-id>. The browser remembers the latest project ID and restores it after a restart. Source, requirements, scenarios, configuration, code plans, review provenance and results are local JSON files. Candidate code is .ts.txt under candidates; approved files are under approved. Both are ignored by Git and excluded from normal TypeScript project discovery and the existing Playwright projects. Existing hand-written tests and CI suites are unchanged. Changing requirements, scenarios, application scope or inspection clears downstream code approval.
+
+Safe adjacent duplicate assertions and semantically/evidentially equivalent duplicate scenarios may be repaired deterministically. Distinct assertion context, state changes, unique wording or different requirement mappings are retained for human review. Before/after repair records are persisted in the project automation state and scenario-repair-audit.json artifact.
+
+## Authentication and network scope
+
+Optionally supply a Playwright storage-state file at .local/auth/<name>.json. This file is used locally by Chromium; its content is never included in model prompts. Do not put credentials into PRDs or scenarios. Password fills and password POM calls are blocked. The application URL must be HTTP(S), without credentials, query or fragment. IPv4 public addresses are supported. Private, reserved and metadata destinations are denied. Explicit local-development opt-in permits IPv4 loopback only; IPv6 is currently denied.
+
+A per-operation origin-restricted proxy connects to a validated pinned IP, preventing a later DNS lookup from redirecting traffic into a private network. Browser routing restricts main-frame and frame navigation to the explicit page list, allows at most five navigations, and blocks POST and other non-read requests. Third-party resources, service workers and unapproved redirects are blocked. This deliberately excludes workflows needing external identity providers, POST login, third-party assets or API mutations; they remain blocked until an appropriate separately reviewed scope implementation is added. This can affect how a production page renders.
+
+## POM reuse
+
+Discovery uses the TypeScript AST and never imports or executes POM modules. It lists public signatures, parameters, paths and identifiable constructor locator assignments. Reuse requires an exported class in a passive module importing only Playwright, a simple Page constructor, supported straight-line methods and unique visible locator evidence for every referenced control. Input method parameters must be strings and values must come from the approved scenario. Complex methods, getters, inherited classes, helper imports and unseen locators remain informational. POM source hashes are checked before approval and execution. Human review remains necessary: static checking is not a security sandbox.
+
+## Configurable sample demonstration
+
+Upload docs/examples/login-controls-prd.md. Approve its initial-page visibility requirements and scenarios. As sample configuration only, enter application name SauceDemo, URL https://www.saucedemo.com/ and POM directory pages. Inspect the page, then generate visibility candidates. Review actual inspection IDs rather than typing selectors. Approve and run selected supported visibility tests and open their Allure/HTML links.
+
+Existing LoginPage.login requires password entry and cannot be reused for this visibility-only PRD. Authentication tests and assertions about uninspected post-login pages must be BLOCKED; do not treat the visibility demonstration as evidence of working login automation. Use a manually prepared local storage state and a new explicit page scope/inspection for authenticated visibility checks. POM methods are reused only when the inspected evidence and approved scenario match a supported method.
+
+## Results and limits
+
+Coverage counts approved requirements, generated/approved scenarios and generated/approved/passed/failed/blocked tests. Requirement rows link to scenario/test IDs; test rows contain approved file, reviewer, failure reason, classification, attachment paths and report links. Failure classifications use reporter evidence and fall back to unknown. Reports and execution logs remain in .local/prd/<id>/runs/<run-id>.
+
+Candidates are intentionally limited to the supported plan operations: click, fill, selectOption, check, explicit visibility/text assertions and vetted POM calls. Dynamic workflows, arbitrary TypeScript, new dependencies and invented fixtures are unsupported. Model responses and human-approved scenario semantics still need careful review. No test is run during candidate validation. Inspection cannot prove future page behavior, credentials or expected outcomes; missing prerequisites must remain blocked.
+
+## Evidence readiness and coverage
+
+The interface displays the actual inspected URL/time, inspected page list, unique visible locator count and discovered/reusable POM method counts. Approved scope URLs are not counted as inspected pages. Each candidate separates supplied inventory from references used by its plan; empty used references do not mean the server lost inspection data. New inspections attach page URL and verification timestamp to each observed control.
+
+Requirements can be classified during review as application-under-test or framework/internal. Framework reporting requirements are tracked separately and excluded from shopping/UI generation. Scenarios are generated in one-requirement batches to preserve IDs; uncovered application requirements are listed for both generated and approved scenario coverage. Existing saved scenarios are rechecked with the current quality rules when restored or reviewed.
+
+Generation checks readiness before calling Ollama. Unsupported named controls, authentication transitions and uninspected destinations produce actionable needs-inspection findings. Missing/unsupported assertions remain blocked. Current-page inspection cannot establish inventory/cart/checkout behavior on other pages. Prepare storage state locally and explicitly approve and inspect each intended starting page; password entry and non-read requests remain blocked. Scenario evidence checks are conservative, not a general semantic proof. Complex POM methods remain informational, and neither classification nor human approval bypasses execution security.

@@ -1,0 +1,17 @@
+{
+  "scenarios": [
+    {
+      "id": "S-001",
+      "requirementIds": ["INV-02"],
+      "title": "Verify numeric ascending price order",
+      "steps": [
+        "Sign in as the standard demo user",
+        "Read displayed product prices",
+        "Select Price (low to high)",
+        "Compare displayed order to sorted numeric prices"
+      ],
+      "expectedResult": "Displayed prices are numerically ascending, including equal-price products.",
+      "priority": "normal"
+    }
+  ]
+}

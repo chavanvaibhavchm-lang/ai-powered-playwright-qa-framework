@@ -1,0 +1,2554 @@
+{
+  "capturedAt": "2026-10-08T13:26:40.847Z",
+  "screens": [
+    {
+      "name": "login",
+      "url": "https://www.saucedemo.com/",
+      "accessibility": "- text: Swag Labs\n- main:\n  - form \"Login\":\n    - textbox \"Username\"\n    - textbox \"Password\"\n    - button \"Login\"\n  - heading \"Accepted usernames are:\" [level=4]\n  - text: standard_user locked_out_user problem_user performance_glitch_user error_user visual_user\n  - heading \"Password for all users:\" [level=4]\n  - text: secret_sauce",
+      "controls": [
+        {
+          "tag": "DIV",
+          "test": "login-container",
+          "id": "",
+          "type": null,
+          "text": "Accepted usernames are:standard_userlocked_out_userproblem_userperformance_glitch_usererror_uservisual_userPassword for all users:secret_sauce",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "INPUT",
+          "test": "username",
+          "id": "user-name",
+          "type": "text",
+          "text": "",
+          "href": null,
+          "placeholder": "Username"
+        },
+        {
+          "tag": "INPUT",
+          "test": "password",
+          "id": "password",
+          "type": "password",
+          "text": "",
+          "href": null,
+          "placeholder": "Password"
+        },
+        {
+          "tag": "INPUT",
+          "test": "login-button",
+          "id": "login-button",
+          "type": "submit",
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "login-credentials-container",
+          "id": "",
+          "type": null,
+          "text": "Accepted usernames are:standard_userlocked_out_userproblem_userperformance_glitch_usererror_uservisual_userPassword for all users:secret_sauce",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "login-credentials",
+          "id": "login_credentials",
+          "type": null,
+          "text": "Accepted usernames are:standard_userlocked_out_userproblem_userperformance_glitch_usererror_uservisual_user",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "login-password",
+          "id": "",
+          "type": null,
+          "text": "Password for all users:secret_sauce",
+          "href": null,
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "name": "inventory",
+      "url": "https://www.saucedemo.com/inventory.html",
+      "accessibility": "- banner:\n  - button \"Open Menu\"\n  - img \"Open Menu\"\n  - text: Swag Labs\n  - button \"Cart, empty\"\n  - text: Products Name (A to Z)\n  - combobox \"Sort products\":\n    - option \"Name (A to Z)\" [selected]\n    - option \"Name (Z to A)\"\n    - option \"Price (low to high)\"\n    - option \"Price (high to low)\"\n- main:\n  - button \"View details for Sauce Labs Backpack\":\n    - img \"Sauce Labs Backpack\"\n  - button \"View details for Sauce Labs Backpack\": Sauce Labs Backpack\n  - text: carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection. $29.99\n  - button \"Add to cart\"\n  - button \"View details for Sauce Labs Bike Light\":\n    - img \"Sauce Labs Bike Light\"\n  - button \"View details for Sauce Labs Bike Light\": Sauce Labs Bike Light\n  - text: A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included. $9.99\n  - button \"Add to cart\"\n  - button \"View details for Sauce Labs Bolt T-Shirt\":\n    - img \"Sauce Labs Bolt T-Shirt\"\n  - button \"View details for Sauce Labs Bolt T-Shirt\": Sauce Labs Bolt T-Shirt\n  - text: Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt. $15.99\n  - button \"Add to cart\"\n  - button \"View details for Sauce Labs Fleece Jacket\":\n    - img \"Sauce Labs Fleece Jacket\"\n  - button \"View details for Sauce Labs Fleece Jacket\": Sauce Labs Fleece Jacket\n  - text: It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office. $49.99\n  - button \"Add to cart\"\n  - button \"View details for Sauce Labs Onesie\":\n    - img \"Sauce Labs Onesie\"\n  - button \"View details for Sauce Labs Onesie\": Sauce Labs Onesie\n  - text: Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel. $7.99\n  - button \"Add to cart\"\n  - button \"View details for Test.allTheThings() T-Shirt (Red)\":\n    - img \"Test.allTheThings() T-Shirt (Red)\"\n  - button \"View details for Test.allTheThings() T-Shirt (Red)\": Test.allTheThings() T-Shirt (Red)\n  - text: This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton. $15.99\n  - button \"Add to cart\"\n- contentinfo:\n  - list:\n    - listitem:\n      - link \"X\":\n        - /url: https://x.com/saucelabs\n    - listitem:\n      - link \"Facebook\":\n        - /url: https://www.facebook.com/saucelabs\n    - listitem:\n      - link \"LinkedIn\":\n        - /url: https://www.linkedin.com/company/sauce-labs/\n  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+      "controls": [
+        {
+          "tag": "HEADER",
+          "test": "header-container",
+          "id": "header_container",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag LabsProductsName (A to Z)Name (A to Z)Name (Z to A)Price (low to high)Price (high to low)",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "primary-header",
+          "id": "",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-menu-btn",
+          "type": "button",
+          "text": "Open Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "open-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "inventory-sidebar-link",
+          "id": "inventory_sidebar_link",
+          "type": null,
+          "text": "All Items",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "dynamic-catalog-sidebar-link",
+          "id": "dynamic_catalog_sidebar_link",
+          "type": null,
+          "text": "Dynamic Catalog",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "about-sidebar-link",
+          "id": "about_sidebar_link",
+          "type": null,
+          "text": "About",
+          "href": "https://saucelabs.com/",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "logout-sidebar-link",
+          "id": "logout_sidebar_link",
+          "type": null,
+          "text": "Logout",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "reset-sidebar-link",
+          "id": "reset_sidebar_link",
+          "type": null,
+          "text": "Reset App State",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-cross-btn",
+          "type": "button",
+          "text": "Close Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "close-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "shopping-cart-link",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "secondary-header",
+          "id": "",
+          "type": null,
+          "text": "ProductsName (A to Z)Name (A to Z)Name (Z to A)Price (low to high)Price (high to low)",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "title",
+          "id": "",
+          "type": null,
+          "text": "Products",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "active-option",
+          "id": "",
+          "type": null,
+          "text": "Name (A to Z)",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SELECT",
+          "test": "product-sort-container",
+          "id": "",
+          "type": null,
+          "text": "Name (A to Z)Name (Z to A)Price (low to high)Price (high to low)",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-container",
+          "id": "inventory_container",
+          "type": null,
+          "text": "Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Add to cartSauce Labs Bike LightA red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.$9.99Add to cartSauce Labs Bolt T-ShirtGet your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.$15.99Add to cartSauce Labs Fleece JacketIt's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.$49.99Add to cartSauce Labs OnesieRib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.$7.99Add to cartTest.allTheThings() T-Shirt (Red)This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.$15.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-list",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Add to cartSauce Labs Bike LightA red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.$9.99Add to cartSauce Labs Bolt T-ShirtGet your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.$15.99Add to cartSauce Labs Fleece JacketIt's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.$49.99Add to cartSauce Labs OnesieRib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.$7.99Add to cartTest.allTheThings() T-Shirt (Red)This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.$15.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-4-img-link",
+          "id": "item_4_img_link",
+          "type": null,
+          "text": "",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "inventory-item-sauce-labs-backpack-img",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-description",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-4-title-link",
+          "id": "item_4_title_link",
+          "type": null,
+          "text": "Sauce Labs Backpack",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Backpack",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$29.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "add-to-cart-sauce-labs-backpack",
+          "id": "add-to-cart-sauce-labs-backpack",
+          "type": null,
+          "text": "Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Bike LightA red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.$9.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-0-img-link",
+          "id": "item_0_img_link",
+          "type": null,
+          "text": "",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "inventory-item-sauce-labs-bike-light-img",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-description",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Bike LightA red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.$9.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-0-title-link",
+          "id": "item_0_title_link",
+          "type": null,
+          "text": "Sauce Labs Bike Light",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Bike Light",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$9.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "add-to-cart-sauce-labs-bike-light",
+          "id": "add-to-cart-sauce-labs-bike-light",
+          "type": null,
+          "text": "Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Bolt T-ShirtGet your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.$15.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-1-img-link",
+          "id": "item_1_img_link",
+          "type": null,
+          "text": "",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "inventory-item-sauce-labs-bolt-t-shirt-img",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-description",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Bolt T-ShirtGet your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.$15.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-1-title-link",
+          "id": "item_1_title_link",
+          "type": null,
+          "text": "Sauce Labs Bolt T-Shirt",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Bolt T-Shirt",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$15.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "add-to-cart-sauce-labs-bolt-t-shirt",
+          "id": "add-to-cart-sauce-labs-bolt-t-shirt",
+          "type": null,
+          "text": "Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Fleece JacketIt's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.$49.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-5-img-link",
+          "id": "item_5_img_link",
+          "type": null,
+          "text": "",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "inventory-item-sauce-labs-fleece-jacket-img",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-description",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Fleece JacketIt's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.$49.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-5-title-link",
+          "id": "item_5_title_link",
+          "type": null,
+          "text": "Sauce Labs Fleece Jacket",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Fleece Jacket",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$49.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "add-to-cart-sauce-labs-fleece-jacket",
+          "id": "add-to-cart-sauce-labs-fleece-jacket",
+          "type": null,
+          "text": "Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs OnesieRib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.$7.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-2-img-link",
+          "id": "item_2_img_link",
+          "type": null,
+          "text": "",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "inventory-item-sauce-labs-onesie-img",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-description",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs OnesieRib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.$7.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-2-title-link",
+          "id": "item_2_title_link",
+          "type": null,
+          "text": "Sauce Labs Onesie",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Onesie",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$7.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "add-to-cart-sauce-labs-onesie",
+          "id": "add-to-cart-sauce-labs-onesie",
+          "type": null,
+          "text": "Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "Test.allTheThings() T-Shirt (Red)This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.$15.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-3-img-link",
+          "id": "item_3_img_link",
+          "type": null,
+          "text": "",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "inventory-item-test.allthethings()-t-shirt-(red)-img",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-description",
+          "id": "",
+          "type": null,
+          "text": "Test.allTheThings() T-Shirt (Red)This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.$15.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-3-title-link",
+          "id": "item_3_title_link",
+          "type": null,
+          "text": "Test.allTheThings() T-Shirt (Red)",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Test.allTheThings() T-Shirt (Red)",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$15.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "add-to-cart-test.allthethings()-t-shirt-(red)",
+          "id": "add-to-cart-test.allthethings()-t-shirt-(red)",
+          "type": null,
+          "text": "Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "FOOTER",
+          "test": "footer",
+          "id": "",
+          "type": null,
+          "text": "XFacebookLinkedIn© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-x",
+          "id": "",
+          "type": null,
+          "text": "X",
+          "href": "https://x.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-facebook",
+          "id": "",
+          "type": null,
+          "text": "Facebook",
+          "href": "https://www.facebook.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-linkedin",
+          "id": "",
+          "type": null,
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/company/sauce-labs/",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "footer-copy",
+          "id": "",
+          "type": null,
+          "text": "© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "name": "details",
+      "url": "https://www.saucedemo.com/inventory-item.html?id=4",
+      "accessibility": "- banner:\n  - button \"Open Menu\"\n  - img \"Open Menu\"\n  - text: Swag Labs\n  - button \"Cart, empty\"\n  - button \"Back to products\"\n- main:\n  - img \"Sauce Labs Backpack\"\n  - text: Sauce Labs Backpack carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection. $29.99\n  - button \"Add to cart\"\n- contentinfo:\n  - list:\n    - listitem:\n      - link \"X\":\n        - /url: https://x.com/saucelabs\n    - listitem:\n      - link \"Facebook\":\n        - /url: https://www.facebook.com/saucelabs\n    - listitem:\n      - link \"LinkedIn\":\n        - /url: https://www.linkedin.com/company/sauce-labs/\n  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+      "controls": [
+        {
+          "tag": "HEADER",
+          "test": "header-container",
+          "id": "header_container",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag LabsBack to products",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "primary-header",
+          "id": "",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-menu-btn",
+          "type": "button",
+          "text": "Open Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "open-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "inventory-sidebar-link",
+          "id": "inventory_sidebar_link",
+          "type": null,
+          "text": "All Items",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "dynamic-catalog-sidebar-link",
+          "id": "dynamic_catalog_sidebar_link",
+          "type": null,
+          "text": "Dynamic Catalog",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "about-sidebar-link",
+          "id": "about_sidebar_link",
+          "type": null,
+          "text": "About",
+          "href": "https://saucelabs.com/",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "logout-sidebar-link",
+          "id": "logout_sidebar_link",
+          "type": null,
+          "text": "Logout",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "reset-sidebar-link",
+          "id": "reset_sidebar_link",
+          "type": null,
+          "text": "Reset App State",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-cross-btn",
+          "type": "button",
+          "text": "Close Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "close-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "shopping-cart-link",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "secondary-header",
+          "id": "",
+          "type": null,
+          "text": "Back to products",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "back-to-products",
+          "id": "back-to-products",
+          "type": null,
+          "text": "Back to products",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-container",
+          "id": "inventory_item_container",
+          "type": null,
+          "text": "Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "item-sauce-labs-backpack-img",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Backpack",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$29.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "add-to-cart",
+          "id": "add-to-cart",
+          "type": null,
+          "text": "Add to cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "FOOTER",
+          "test": "footer",
+          "id": "",
+          "type": null,
+          "text": "XFacebookLinkedIn© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-x",
+          "id": "",
+          "type": null,
+          "text": "X",
+          "href": "https://x.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-facebook",
+          "id": "",
+          "type": null,
+          "text": "Facebook",
+          "href": "https://www.facebook.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-linkedin",
+          "id": "",
+          "type": null,
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/company/sauce-labs/",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "footer-copy",
+          "id": "",
+          "type": null,
+          "text": "© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "name": "cart",
+      "url": "https://www.saucedemo.com/cart.html",
+      "accessibility": "- banner:\n  - button \"Open Menu\"\n  - img \"Open Menu\"\n  - text: Swag Labs\n  - button \"Cart, 1 items\": \"1\"\n  - text: Your Cart\n- main:\n  - text: QTY Description 1\n  - button \"View details for Sauce Labs Backpack\": Sauce Labs Backpack\n  - text: carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection. $29.99\n  - button \"Remove\"\n  - button \"Continue Shopping\"\n  - button \"Checkout\"\n- contentinfo:\n  - list:\n    - listitem:\n      - link \"X\":\n        - /url: https://x.com/saucelabs\n    - listitem:\n      - link \"Facebook\":\n        - /url: https://www.facebook.com/saucelabs\n    - listitem:\n      - link \"LinkedIn\":\n        - /url: https://www.linkedin.com/company/sauce-labs/\n  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+      "controls": [
+        {
+          "tag": "HEADER",
+          "test": "header-container",
+          "id": "header_container",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs1Your Cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "primary-header",
+          "id": "",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-menu-btn",
+          "type": "button",
+          "text": "Open Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "open-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "inventory-sidebar-link",
+          "id": "inventory_sidebar_link",
+          "type": null,
+          "text": "All Items",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "dynamic-catalog-sidebar-link",
+          "id": "dynamic_catalog_sidebar_link",
+          "type": null,
+          "text": "Dynamic Catalog",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "about-sidebar-link",
+          "id": "about_sidebar_link",
+          "type": null,
+          "text": "About",
+          "href": "https://saucelabs.com/",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "logout-sidebar-link",
+          "id": "logout_sidebar_link",
+          "type": null,
+          "text": "Logout",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "reset-sidebar-link",
+          "id": "reset_sidebar_link",
+          "type": null,
+          "text": "Reset App State",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-cross-btn",
+          "type": "button",
+          "text": "Close Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "close-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "shopping-cart-link",
+          "id": "",
+          "type": null,
+          "text": "1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "shopping-cart-badge",
+          "id": "",
+          "type": null,
+          "text": "1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "secondary-header",
+          "id": "",
+          "type": null,
+          "text": "Your Cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "title",
+          "id": "",
+          "type": null,
+          "text": "Your Cart",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "cart-contents-container",
+          "id": "cart_contents_container",
+          "type": null,
+          "text": "QTYDescription1Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99RemoveContinue ShoppingCheckout",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "cart-list",
+          "id": "",
+          "type": null,
+          "text": "QTYDescription1Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Remove",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "cart-quantity-label",
+          "id": "",
+          "type": null,
+          "text": "QTY",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "cart-desc-label",
+          "id": "",
+          "type": null,
+          "text": "Description",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "1Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Remove",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "item-quantity",
+          "id": "",
+          "type": null,
+          "text": "1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-4-title-link",
+          "id": "item_4_title_link",
+          "type": null,
+          "text": "Sauce Labs Backpack",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Backpack",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$29.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "remove-sauce-labs-backpack",
+          "id": "remove-sauce-labs-backpack",
+          "type": null,
+          "text": "Remove",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "continue-shopping",
+          "id": "continue-shopping",
+          "type": null,
+          "text": "Continue Shopping",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "checkout",
+          "id": "checkout",
+          "type": null,
+          "text": "Checkout",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "FOOTER",
+          "test": "footer",
+          "id": "",
+          "type": null,
+          "text": "XFacebookLinkedIn© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-x",
+          "id": "",
+          "type": null,
+          "text": "X",
+          "href": "https://x.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-facebook",
+          "id": "",
+          "type": null,
+          "text": "Facebook",
+          "href": "https://www.facebook.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-linkedin",
+          "id": "",
+          "type": null,
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/company/sauce-labs/",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "footer-copy",
+          "id": "",
+          "type": null,
+          "text": "© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "name": "checkout-validation",
+      "url": "https://www.saucedemo.com/checkout-step-one.html",
+      "accessibility": "- banner:\n  - button \"Open Menu\"\n  - img \"Open Menu\"\n  - text: Swag Labs\n  - button \"Cart, 1 items\": \"1\"\n  - text: \"Checkout: Your Information\"\n- main:\n  - form \"Checkout information\":\n    - textbox \"First Name\"\n    - textbox \"Last Name\"\n    - textbox \"Zip/Postal Code\"\n    - alert:\n      - button \"Dismiss error\"\n      - text: \"Error: First Name is required\"\n    - button \"Cancel\"\n    - button \"Continue\"\n- contentinfo:\n  - list:\n    - listitem:\n      - link \"X\":\n        - /url: https://x.com/saucelabs\n    - listitem:\n      - link \"Facebook\":\n        - /url: https://www.facebook.com/saucelabs\n    - listitem:\n      - link \"LinkedIn\":\n        - /url: https://www.linkedin.com/company/sauce-labs/\n  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+      "controls": [
+        {
+          "tag": "HEADER",
+          "test": "header-container",
+          "id": "header_container",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs1Checkout: Your Information",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "primary-header",
+          "id": "",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-menu-btn",
+          "type": "button",
+          "text": "Open Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "open-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "inventory-sidebar-link",
+          "id": "inventory_sidebar_link",
+          "type": null,
+          "text": "All Items",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "dynamic-catalog-sidebar-link",
+          "id": "dynamic_catalog_sidebar_link",
+          "type": null,
+          "text": "Dynamic Catalog",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "about-sidebar-link",
+          "id": "about_sidebar_link",
+          "type": null,
+          "text": "About",
+          "href": "https://saucelabs.com/",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "logout-sidebar-link",
+          "id": "logout_sidebar_link",
+          "type": null,
+          "text": "Logout",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "reset-sidebar-link",
+          "id": "reset_sidebar_link",
+          "type": null,
+          "text": "Reset App State",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-cross-btn",
+          "type": "button",
+          "text": "Close Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "close-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "shopping-cart-link",
+          "id": "",
+          "type": null,
+          "text": "1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "shopping-cart-badge",
+          "id": "",
+          "type": null,
+          "text": "1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "secondary-header",
+          "id": "",
+          "type": null,
+          "text": "Checkout: Your Information",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "title",
+          "id": "",
+          "type": null,
+          "text": "Checkout: Your Information",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "checkout-info-container",
+          "id": "checkout_info_container",
+          "type": null,
+          "text": "Error: First Name is requiredCancel",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "INPUT",
+          "test": "firstName",
+          "id": "first-name",
+          "type": "text",
+          "text": "",
+          "href": null,
+          "placeholder": "First Name"
+        },
+        {
+          "tag": "INPUT",
+          "test": "lastName",
+          "id": "last-name",
+          "type": "text",
+          "text": "",
+          "href": null,
+          "placeholder": "Last Name"
+        },
+        {
+          "tag": "INPUT",
+          "test": "postalCode",
+          "id": "postal-code",
+          "type": "text",
+          "text": "",
+          "href": null,
+          "placeholder": "Zip/Postal Code"
+        },
+        {
+          "tag": "H3",
+          "test": "error",
+          "id": "",
+          "type": null,
+          "text": "Error: First Name is required",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "error-button",
+          "id": "",
+          "type": "button",
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "cancel",
+          "id": "cancel",
+          "type": null,
+          "text": "Cancel",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "INPUT",
+          "test": "continue",
+          "id": "continue",
+          "type": "submit",
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "FOOTER",
+          "test": "footer",
+          "id": "",
+          "type": null,
+          "text": "XFacebookLinkedIn© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-x",
+          "id": "",
+          "type": null,
+          "text": "X",
+          "href": "https://x.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-facebook",
+          "id": "",
+          "type": null,
+          "text": "Facebook",
+          "href": "https://www.facebook.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-linkedin",
+          "id": "",
+          "type": null,
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/company/sauce-labs/",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "footer-copy",
+          "id": "",
+          "type": null,
+          "text": "© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "name": "overview",
+      "url": "https://www.saucedemo.com/checkout-step-two.html",
+      "accessibility": "- banner:\n  - button \"Open Menu\"\n  - img \"Open Menu\"\n  - text: Swag Labs\n  - button \"Cart, 1 items\": \"1\"\n  - text: \"Checkout: Overview\"\n- main:\n  - text: QTY Description 1\n  - button \"View details for Sauce Labs Backpack\": Sauce Labs Backpack\n  - text: \"carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection. $29.99 Payment Information: SauceCard #31337 Shipping Information: Free Pony Express Delivery! Price Total Item total: $29.99 Tax: $2.40 Total: $32.39\"\n  - button \"Cancel\"\n  - button \"Finish\"\n- contentinfo:\n  - list:\n    - listitem:\n      - link \"X\":\n        - /url: https://x.com/saucelabs\n    - listitem:\n      - link \"Facebook\":\n        - /url: https://www.facebook.com/saucelabs\n    - listitem:\n      - link \"LinkedIn\":\n        - /url: https://www.linkedin.com/company/sauce-labs/\n  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+      "controls": [
+        {
+          "tag": "HEADER",
+          "test": "header-container",
+          "id": "header_container",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs1Checkout: Overview",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "primary-header",
+          "id": "",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-menu-btn",
+          "type": "button",
+          "text": "Open Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "open-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "inventory-sidebar-link",
+          "id": "inventory_sidebar_link",
+          "type": null,
+          "text": "All Items",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "dynamic-catalog-sidebar-link",
+          "id": "dynamic_catalog_sidebar_link",
+          "type": null,
+          "text": "Dynamic Catalog",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "about-sidebar-link",
+          "id": "about_sidebar_link",
+          "type": null,
+          "text": "About",
+          "href": "https://saucelabs.com/",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "logout-sidebar-link",
+          "id": "logout_sidebar_link",
+          "type": null,
+          "text": "Logout",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "reset-sidebar-link",
+          "id": "reset_sidebar_link",
+          "type": null,
+          "text": "Reset App State",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-cross-btn",
+          "type": "button",
+          "text": "Close Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "close-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "shopping-cart-link",
+          "id": "",
+          "type": null,
+          "text": "1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "shopping-cart-badge",
+          "id": "",
+          "type": null,
+          "text": "1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "secondary-header",
+          "id": "",
+          "type": null,
+          "text": "Checkout: Overview",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "title",
+          "id": "",
+          "type": null,
+          "text": "Checkout: Overview",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "checkout-summary-container",
+          "id": "checkout_summary_container",
+          "type": null,
+          "text": "QTYDescription1Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Payment Information:SauceCard #31337Shipping Information:Free Pony Express Delivery!Price TotalItem total: $29.99Tax: $2.40Total: $32.39CancelFinish",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "cart-list",
+          "id": "",
+          "type": null,
+          "text": "QTYDescription1Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "cart-quantity-label",
+          "id": "",
+          "type": null,
+          "text": "QTY",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "cart-desc-label",
+          "id": "",
+          "type": null,
+          "text": "Description",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item",
+          "id": "",
+          "type": null,
+          "text": "1Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "item-quantity",
+          "id": "",
+          "type": null,
+          "text": "1",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "item-4-title-link",
+          "id": "item_4_title_link",
+          "type": null,
+          "text": "Sauce Labs Backpack",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-name",
+          "id": "",
+          "type": null,
+          "text": "Sauce Labs Backpack",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-desc",
+          "id": "",
+          "type": null,
+          "text": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "inventory-item-price",
+          "id": "",
+          "type": null,
+          "text": "$29.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "payment-info-label",
+          "id": "",
+          "type": null,
+          "text": "Payment Information:",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "payment-info-value",
+          "id": "",
+          "type": null,
+          "text": "SauceCard #31337",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "shipping-info-label",
+          "id": "",
+          "type": null,
+          "text": "Shipping Information:",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "shipping-info-value",
+          "id": "",
+          "type": null,
+          "text": "Free Pony Express Delivery!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "total-info-label",
+          "id": "",
+          "type": null,
+          "text": "Price Total",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "subtotal-label",
+          "id": "",
+          "type": null,
+          "text": "Item total: $29.99",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "tax-label",
+          "id": "",
+          "type": null,
+          "text": "Tax: $2.40",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "total-label",
+          "id": "",
+          "type": null,
+          "text": "Total: $32.39",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "cancel",
+          "id": "cancel",
+          "type": null,
+          "text": "Cancel",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "finish",
+          "id": "finish",
+          "type": null,
+          "text": "Finish",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "FOOTER",
+          "test": "footer",
+          "id": "",
+          "type": null,
+          "text": "XFacebookLinkedIn© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-x",
+          "id": "",
+          "type": null,
+          "text": "X",
+          "href": "https://x.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-facebook",
+          "id": "",
+          "type": null,
+          "text": "Facebook",
+          "href": "https://www.facebook.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-linkedin",
+          "id": "",
+          "type": null,
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/company/sauce-labs/",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "footer-copy",
+          "id": "",
+          "type": null,
+          "text": "© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "name": "complete",
+      "url": "https://www.saucedemo.com/checkout-complete.html",
+      "accessibility": "- banner:\n  - button \"Open Menu\"\n  - img \"Open Menu\"\n  - text: Swag Labs\n  - button \"Cart, empty\"\n  - text: \"Checkout: Complete!\"\n- main:\n  - img \"Pony Express\"\n  - heading \"Thank you for your order!\" [level=2]\n  - text: Your order has been dispatched, and will arrive just as fast as the pony can get there!\n  - button \"Back Home\"\n  - button \"Generate PDF order\"\n- contentinfo:\n  - list:\n    - listitem:\n      - link \"X\":\n        - /url: https://x.com/saucelabs\n    - listitem:\n      - link \"Facebook\":\n        - /url: https://www.facebook.com/saucelabs\n    - listitem:\n      - link \"LinkedIn\":\n        - /url: https://www.linkedin.com/company/sauce-labs/\n  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+      "controls": [
+        {
+          "tag": "HEADER",
+          "test": "header-container",
+          "id": "header_container",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag LabsCheckout: Complete!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "primary-header",
+          "id": "",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-menu-btn",
+          "type": "button",
+          "text": "Open Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "open-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "inventory-sidebar-link",
+          "id": "inventory_sidebar_link",
+          "type": null,
+          "text": "All Items",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "dynamic-catalog-sidebar-link",
+          "id": "dynamic_catalog_sidebar_link",
+          "type": null,
+          "text": "Dynamic Catalog",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "about-sidebar-link",
+          "id": "about_sidebar_link",
+          "type": null,
+          "text": "About",
+          "href": "https://saucelabs.com/",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "logout-sidebar-link",
+          "id": "logout_sidebar_link",
+          "type": null,
+          "text": "Logout",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "reset-sidebar-link",
+          "id": "reset_sidebar_link",
+          "type": null,
+          "text": "Reset App State",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-cross-btn",
+          "type": "button",
+          "text": "Close Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "close-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "shopping-cart-link",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "secondary-header",
+          "id": "",
+          "type": null,
+          "text": "Checkout: Complete!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "title",
+          "id": "",
+          "type": null,
+          "text": "Checkout: Complete!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "checkout-complete-container",
+          "id": "checkout_complete_container",
+          "type": null,
+          "text": "Thank you for your order!Your order has been dispatched, and will arrive just as fast as the pony can get there!Back HomeGenerate PDF order",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "pony-express",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "H2",
+          "test": "complete-header",
+          "id": "",
+          "type": null,
+          "text": "Thank you for your order!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "complete-text",
+          "id": "",
+          "type": null,
+          "text": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "back-to-products",
+          "id": "back-to-products",
+          "type": null,
+          "text": "Back Home",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "generate-pdf-order",
+          "id": "generate-pdf-order",
+          "type": null,
+          "text": "Generate PDF order",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "FOOTER",
+          "test": "footer",
+          "id": "",
+          "type": null,
+          "text": "XFacebookLinkedIn© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-x",
+          "id": "",
+          "type": null,
+          "text": "X",
+          "href": "https://x.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-facebook",
+          "id": "",
+          "type": null,
+          "text": "Facebook",
+          "href": "https://www.facebook.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-linkedin",
+          "id": "",
+          "type": null,
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/company/sauce-labs/",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "footer-copy",
+          "id": "",
+          "type": null,
+          "text": "© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        }
+      ]
+    },
+    {
+      "name": "menu",
+      "url": "https://www.saucedemo.com/checkout-complete.html",
+      "accessibility": "- banner:\n  - button \"Open Menu\"\n  - img \"Open Menu\"\n  - navigation:\n    - button \"All Items\"\n    - button \"Dynamic Catalog\"\n    - link \"About\":\n      - /url: https://saucelabs.com/\n    - button \"Logout\"\n    - button \"Reset App State\"\n  - button \"Close Menu\"\n  - img \"Close Menu\"\n  - text: Swag Labs\n  - button \"Cart, empty\"\n  - text: \"Checkout: Complete!\"\n- main:\n  - img \"Pony Express\"\n  - heading \"Thank you for your order!\" [level=2]\n  - text: Your order has been dispatched, and will arrive just as fast as the pony can get there!\n  - button \"Back Home\"\n  - button \"Generate PDF order\"\n- contentinfo:\n  - list:\n    - listitem:\n      - link \"X\":\n        - /url: https://x.com/saucelabs\n    - listitem:\n      - link \"Facebook\":\n        - /url: https://www.facebook.com/saucelabs\n    - listitem:\n      - link \"LinkedIn\":\n        - /url: https://www.linkedin.com/company/sauce-labs/\n  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+      "controls": [
+        {
+          "tag": "HEADER",
+          "test": "header-container",
+          "id": "header_container",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag LabsCheckout: Complete!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "primary-header",
+          "id": "",
+          "type": null,
+          "text": "Open MenuAll ItemsDynamic CatalogAboutLogoutReset App StateClose MenuSwag Labs",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-menu-btn",
+          "type": "button",
+          "text": "Open Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "open-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "inventory-sidebar-link",
+          "id": "inventory_sidebar_link",
+          "type": null,
+          "text": "All Items",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "dynamic-catalog-sidebar-link",
+          "id": "dynamic_catalog_sidebar_link",
+          "type": null,
+          "text": "Dynamic Catalog",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "about-sidebar-link",
+          "id": "about_sidebar_link",
+          "type": null,
+          "text": "About",
+          "href": "https://saucelabs.com/",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "logout-sidebar-link",
+          "id": "logout_sidebar_link",
+          "type": null,
+          "text": "Logout",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "reset-sidebar-link",
+          "id": "reset_sidebar_link",
+          "type": null,
+          "text": "Reset App State",
+          "href": "#",
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": null,
+          "id": "react-burger-cross-btn",
+          "type": "button",
+          "text": "Close Menu",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "close-menu",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "shopping-cart-link",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "secondary-header",
+          "id": "",
+          "type": null,
+          "text": "Checkout: Complete!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "SPAN",
+          "test": "title",
+          "id": "",
+          "type": null,
+          "text": "Checkout: Complete!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "checkout-complete-container",
+          "id": "checkout_complete_container",
+          "type": null,
+          "text": "Thank you for your order!Your order has been dispatched, and will arrive just as fast as the pony can get there!Back HomeGenerate PDF order",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "IMG",
+          "test": "pony-express",
+          "id": "",
+          "type": null,
+          "text": "",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "H2",
+          "test": "complete-header",
+          "id": "",
+          "type": null,
+          "text": "Thank you for your order!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "complete-text",
+          "id": "",
+          "type": null,
+          "text": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "back-to-products",
+          "id": "back-to-products",
+          "type": null,
+          "text": "Back Home",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "BUTTON",
+          "test": "generate-pdf-order",
+          "id": "generate-pdf-order",
+          "type": null,
+          "text": "Generate PDF order",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "FOOTER",
+          "test": "footer",
+          "id": "",
+          "type": null,
+          "text": "XFacebookLinkedIn© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-x",
+          "id": "",
+          "type": null,
+          "text": "X",
+          "href": "https://x.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-facebook",
+          "id": "",
+          "type": null,
+          "text": "Facebook",
+          "href": "https://www.facebook.com/saucelabs",
+          "placeholder": null
+        },
+        {
+          "tag": "A",
+          "test": "social-linkedin",
+          "id": "",
+          "type": null,
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/company/sauce-labs/",
+          "placeholder": null
+        },
+        {
+          "tag": "DIV",
+          "test": "footer-copy",
+          "id": "",
+          "type": null,
+          "text": "© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+          "href": null,
+          "placeholder": null
+        }
+      ]
+    }
+  ],
+  "personas": [
+    {
+      "user": "locked_out_user",
+      "elapsedMs": 51,
+      "url": "https://www.saucedemo.com/",
+      "error": [
+        "Epic sadface: Sorry, this user has been locked out."
+      ]
+    },
+    {
+      "user": "performance_glitch_user",
+      "elapsedMs": 5110,
+      "url": "https://www.saucedemo.com/inventory.html",
+      "error": [],
+      "images": [
+        "/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg",
+        "/assets/bike-light-1200x1500-DxcZRFOA.jpg",
+        "/assets/bolt-shirt-1200x1500-mR0ldpVS.jpg",
+        "/assets/sauce-pullover-1200x1500-BfbI-PSd.jpg",
+        "/assets/red-onesie-1200x1500-BrSuq0ic.jpg",
+        "/assets/red-tatt-1200x1500-E-qp6aYf.jpg"
+      ],
+      "backpackButton": 1,
+      "lastNameValue": "Lovelace",
+      "checkoutUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "checkoutError": []
+    },
+    {
+      "user": "problem_user",
+      "elapsedMs": 62,
+      "url": "https://www.saucedemo.com/inventory.html",
+      "error": [],
+      "images": [
+        "/assets/sl-404-Cq1a9k9X.jpg",
+        "/assets/sl-404-Cq1a9k9X.jpg",
+        "/assets/sl-404-Cq1a9k9X.jpg",
+        "/assets/sl-404-Cq1a9k9X.jpg",
+        "/assets/sl-404-Cq1a9k9X.jpg",
+        "/assets/sl-404-Cq1a9k9X.jpg"
+      ],
+      "backpackButton": 1,
+      "lastNameValue": "",
+      "checkoutUrl": "https://www.saucedemo.com/checkout-step-one.html",
+      "checkoutError": [
+        "Error: Last Name is required"
+      ]
+    },
+    {
+      "user": "error_user",
+      "elapsedMs": 78,
+      "url": "https://www.saucedemo.com/inventory.html",
+      "error": [],
+      "images": [
+        "/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg",
+        "/assets/bike-light-1200x1500-DxcZRFOA.jpg",
+        "/assets/bolt-shirt-1200x1500-mR0ldpVS.jpg",
+        "/assets/sauce-pullover-1200x1500-BfbI-PSd.jpg",
+        "/assets/red-onesie-1200x1500-BrSuq0ic.jpg",
+        "/assets/red-tatt-1200x1500-E-qp6aYf.jpg"
+      ],
+      "backpackButton": 1,
+      "lastNameValue": "",
+      "checkoutUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "checkoutError": []
+    },
+    {
+      "user": "visual_user",
+      "elapsedMs": 78,
+      "url": "https://www.saucedemo.com/inventory.html",
+      "error": [],
+      "images": [
+        "/assets/sl-404-Cq1a9k9X.jpg",
+        "/assets/bike-light-1200x1500-DxcZRFOA.jpg",
+        "/assets/bolt-shirt-1200x1500-mR0ldpVS.jpg",
+        "/assets/sauce-pullover-1200x1500-BfbI-PSd.jpg",
+        "/assets/red-onesie-1200x1500-BrSuq0ic.jpg",
+        "/assets/red-tatt-1200x1500-E-qp6aYf.jpg"
+      ],
+      "backpackButton": 1,
+      "lastNameValue": "Lovelace",
+      "checkoutUrl": "https://www.saucedemo.com/checkout-step-two.html",
+      "checkoutError": []
+    }
+  ],
+  "credentials": [
+    "Accepted usernames are:standard_userlocked_out_userproblem_userperformance_glitch_usererror_uservisual_user",
+    "Password for all users:secret_sauce"
+  ],
+  "products": [
+    {
+      "name": "Sauce Labs Backpack",
+      "description": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+      "price": "$29.99",
+      "image": "/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg"
+    },
+    {
+      "name": "Sauce Labs Bike Light",
+      "description": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.",
+      "price": "$9.99",
+      "image": "/assets/bike-light-1200x1500-DxcZRFOA.jpg"
+    },
+    {
+      "name": "Sauce Labs Bolt T-Shirt",
+      "description": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.",
+      "price": "$15.99",
+      "image": "/assets/bolt-shirt-1200x1500-mR0ldpVS.jpg"
+    },
+    {
+      "name": "Sauce Labs Fleece Jacket",
+      "description": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.",
+      "price": "$49.99",
+      "image": "/assets/sauce-pullover-1200x1500-BfbI-PSd.jpg"
+    },
+    {
+      "name": "Sauce Labs Onesie",
+      "description": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.",
+      "price": "$7.99",
+      "image": "/assets/red-onesie-1200x1500-BrSuq0ic.jpg"
+    },
+    {
+      "name": "Test.allTheThings() T-Shirt (Red)",
+      "description": "This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.",
+      "price": "$15.99",
+      "image": "/assets/red-tatt-1200x1500-E-qp6aYf.jpg"
+    }
+  ],
+  "sortOptions": [
+    {
+      "value": "az",
+      "text": "Name (A to Z)"
+    },
+    {
+      "value": "za",
+      "text": "Name (Z to A)"
+    },
+    {
+      "value": "lohi",
+      "text": "Price (low to high)"
+    },
+    {
+      "value": "hilo",
+      "text": "Price (high to low)"
+    }
+  ]
+}

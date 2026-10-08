@@ -1,0 +1,2806 @@
+{
+  "scope": "Existing executed automation, not new coverage or a new test run",
+  "evidenceSources": [
+    "docs/evidence/headed-portfolio-execution.json",
+    "docs/evidence/headed-examples-execution.json"
+  ],
+  "count": 79,
+  "cases": [
+    {
+      "id": "TC-001",
+      "steps": [
+        "Open https://www.saucedemo.com/.",
+        "Enter standard_user and secret_sauce; click Login.",
+        "Check the destination URL and Products title."
+      ],
+      "expected": [
+        "URL is https://www.saucedemo.com/inventory.html.",
+        "Products title is displayed."
+      ],
+      "priority": "Critical",
+      "data": "standard_user / secret_sauce (public demo credentials)",
+      "title": "Verify successful login to SauceDemo",
+      "suite": "authentication",
+      "requirement": "AUTH-01",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/login.spec.ts",
+        "title": "Verify successful login to SauceDemo",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-002",
+      "steps": [
+        "Open the login screen and inspect the password input type.",
+        "Fill the username; press Tab.",
+        "Fill the password; press Enter."
+      ],
+      "expected": [
+        "Password input type is password.",
+        "Tab focuses the password field.",
+        "Enter submits the form and opens inventory."
+      ],
+      "data": "standard_user / secret_sauce (public demo credentials)",
+      "title": "password is masked and keyboard login works",
+      "suite": "authentication",
+      "requirement": "AUTH-03",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/auth/auth.spec.ts",
+        "title": "[AUTH-03] password is masked and keyboard login works",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-003",
+      "steps": [
+        "Sign in as standard_user.",
+        "Refresh inventory.",
+        "Open Menu and select Logout.",
+        "Navigate directly to /inventory.html."
+      ],
+      "expected": [
+        "Refresh retains the Products screen.",
+        "Logout displays Login.",
+        "Direct inventory access displays You can only access '/inventory.html' when you are logged in."
+      ],
+      "title": "inventory refresh preserves session and logout revokes access",
+      "suite": "authentication",
+      "requirement": "AUTH-03",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/auth/auth.spec.ts",
+        "title": "[AUTH-03] inventory refresh preserves session and logout revokes access",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-004",
+      "steps": ["Start a fresh browser context without login.", "Open /inventory.html."],
+      "expected": ["Login is visible.", "An error containing You can only access is shown."],
+      "preconditions": "Fresh unauthenticated context.",
+      "title": "unauthenticated direct inventory navigation is rejected",
+      "suite": "authentication",
+      "requirement": "AUTH-03",
+      "priority": "Normal",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/auth/auth.spec.ts",
+        "title": "[AUTH-03] unauthenticated direct inventory navigation is rejected",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-021",
+      "steps": [
+        "Record card data; add Backpack and Bike Light.",
+        "Open cart and compare both items and quantities.",
+        "Refresh cart and compare again.",
+        "Remove Backpack; Continue Shopping.",
+        "Check Backpack Add to cart, remove Bike Light, then reopen cart."
+      ],
+      "expected": [
+        "Badge is initially 2; cart data matches inventory and quantities are both 1.",
+        "Refresh preserves both items.",
+        "Removing Backpack changes badge to 1 and its inventory action to Add to cart.",
+        "Removing the remaining item clears badge and cart."
+      ],
+      "priority": "Critical",
+      "data": "Sauce Labs Backpack + Sauce Labs Bike Light",
+      "title": "multiple items retain identity, price and badge after refresh",
+      "suite": "cart",
+      "requirement": "CART-01",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/cart/cart.spec.ts",
+        "title": "[CART-01] multiple items retain identity, price and badge after refresh",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-022",
+      "steps": ["Add Backpack and check badge.", "Open cart and remove Backpack."],
+      "expected": ["Badge is initially 1.", "Cart is empty and badge disappears."],
+      "title": "single item can be removed from the cart",
+      "suite": "cart",
+      "requirement": "CART-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/cart/cart.spec.ts",
+        "title": "[CART-01] single item can be removed from the cart",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-023",
+      "steps": [
+        "Sign in without adding products; open cart.",
+        "Inspect cart and Checkout button.",
+        "Click Continue Shopping."
+      ],
+      "expected": [
+        "Cart contains no items and Checkout is visible.",
+        "Continue Shopping returns to all six products."
+      ],
+      "notes": "No assertion that empty-cart checkout must be blocked; the implementation does not specify that policy.",
+      "title": "empty cart has navigation controls without fabricated empty-cart policy",
+      "suite": "cart",
+      "requirement": "CART-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/cart/cart.spec.ts",
+        "title": "[CART-01] empty cart has navigation controls without fabricated empty-cart policy",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-024",
+      "steps": [
+        "Record displayed product data and add the specified basket.",
+        "Open cart; compare selected items; click Checkout.",
+        "Enter customer data and Continue.",
+        "Compare overview items, subtotal, displayed tax and total.",
+        "Finish, then Back Home."
+      ],
+      "expected": [
+        "Cart/overview line items match inventory.",
+        "Subtotal equals the sum of displayed prices in integer cents.",
+        "Tax is nonnegative; total equals subtotal plus displayed tax, without assuming a tax rate.",
+        "Payment and shipping information are nonempty.",
+        "Thank you for your order! appears; badge clears; Back Home shows six products."
+      ],
+      "priority": "Critical",
+      "data": "Sauce Labs Backpack; First Name: Ada; Last Name: Lovelace; Postal Code: 560001",
+      "title": "completes 1-item checkout with verified arithmetic",
+      "suite": "checkout",
+      "requirement": "CHECK-02",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/checkout/checkout.spec.ts",
+        "title": "[CHECK-02] completes 1-item checkout with verified arithmetic",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-025",
+      "steps": [
+        "Record displayed product data and add the specified basket.",
+        "Open cart; compare selected items; click Checkout.",
+        "Enter customer data and Continue.",
+        "Compare overview items, subtotal, displayed tax and total.",
+        "Finish, then Back Home."
+      ],
+      "expected": [
+        "Cart/overview line items match inventory.",
+        "Subtotal equals the sum of displayed prices in integer cents.",
+        "Tax is nonnegative; total equals subtotal plus displayed tax, without assuming a tax rate.",
+        "Payment and shipping information are nonempty.",
+        "Thank you for your order! appears; badge clears; Back Home shows six products."
+      ],
+      "priority": "Critical",
+      "data": "Sauce Labs Backpack + Sauce Labs Bike Light; First Name: Ada; Last Name: Lovelace; Postal Code: 560001",
+      "title": "completes 2-item checkout with verified arithmetic",
+      "suite": "checkout",
+      "requirement": "CHECK-02",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/checkout/checkout.spec.ts",
+        "title": "[CHECK-02] completes 2-item checkout with verified arithmetic",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-026",
+      "steps": [
+        "Add Backpack; open cart and Checkout.",
+        "Cancel from customer information.",
+        "Start Checkout again, fill valid customer data and Continue.",
+        "Cancel from overview."
+      ],
+      "expected": [
+        "First Cancel returns to cart with one item.",
+        "Overview Cancel returns to inventory and badge remains 1."
+      ],
+      "data": "First Name: Ada; Last Name: Lovelace; Postal Code: 560001",
+      "title": "cancel from information returns to cart and overview returns to inventory",
+      "suite": "checkout",
+      "requirement": "CHECK-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/checkout/checkout.spec.ts",
+        "title": "[CHECK-02] cancel from information returns to cart and overview returns to inventory",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-027",
+      "steps": [
+        "Complete a Backpack checkout with valid customer data.",
+        "Click Generate PDF order and capture the download.",
+        "Save the file and inspect its filename, first five bytes and size."
+      ],
+      "expected": [
+        "Download reports no failure and filename ends in .pdf.",
+        "File starts with %PDF- and exceeds 100 bytes.",
+        "The genuine artifact is attached to the test report."
+      ],
+      "data": "First Name: Ada; Last Name: Lovelace; Postal Code: 560001",
+      "notes": "File download/header checks only; PDF text and layout are not certified.",
+      "title": "completed demo order downloads a nonempty PDF artifact",
+      "suite": "checkout",
+      "requirement": "PDF-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/checkout/download.spec.ts",
+        "title": "[PDF-01] completed demo order downloads a nonempty PDF artifact",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-018",
+      "steps": [
+        "Sign in; open Menu > Dynamic Catalog > Lazy Load.",
+        "Wait for at least six loaded product-name elements and record count.",
+        "Scroll the lazy-load sentinel into view.",
+        "Wait for more product-name elements to load."
+      ],
+      "expected": [
+        "URL ends in dynamic-catalog-lazy-load.html.",
+        "Loaded product-name count increases beyond the recorded count."
+      ],
+      "title": "lazy catalog loads more product cards when scrolling to its sentinel",
+      "suite": "inventory",
+      "requirement": "DYN-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/inventory/dynamic.spec.ts",
+        "title": "[DYN-01] lazy catalog loads more product cards when scrolling to its sentinel",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-019",
+      "steps": [
+        "Sign in; open Menu > Dynamic Catalog > Spinner.",
+        "Wait for the loading spinner to be removed (up to 20 seconds).",
+        "Inspect the loaded catalog container."
+      ],
+      "expected": [
+        "URL ends in dynamic-catalog-spinner.html.",
+        "Spinner element is absent.",
+        "Loaded content contains Sauce Labs."
+      ],
+      "title": "spinner disappears and loaded product content becomes visible",
+      "suite": "inventory",
+      "requirement": "DYN-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/inventory/dynamic.spec.ts",
+        "title": "[DYN-01] spinner disappears and loaded product content becomes visible",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-020",
+      "steps": [
+        "Sign in; open Menu > Dynamic Catalog > Slider.",
+        "Click Show Sauce Labs Backpack.",
+        "Inspect the displayed product name and price."
+      ],
+      "expected": [
+        "URL ends in dynamic-catalog-slider.html.",
+        "Name is Sauce Labs Backpack and price is $29.99."
+      ],
+      "title": "slider selects the requested product with a named control",
+      "suite": "inventory",
+      "requirement": "DYN-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/inventory/dynamic.spec.ts",
+        "title": "[DYN-01] slider selects the requested product with a named control",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-014",
+      "steps": [
+        "Sign in and inspect all six inventory cards.",
+        "Extract product names, descriptions and displayed prices.",
+        "Wait for each image to load and inspect its natural width."
+      ],
+      "expected": [
+        "Names match test-data/products.ts in initial order.",
+        "Each description has more than 20 characters; price is positive.",
+        "All images are complete with naturalWidth > 0."
+      ],
+      "priority": "Critical",
+      "title": "catalog contains six complete products with loaded images",
+      "suite": "inventory",
+      "requirement": "INV-01",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/inventory/inventory.spec.ts",
+        "title": "[INV-01] catalog contains six complete products with loaded images",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-015",
+      "steps": [
+        "Record all inventory names and numeric prices.",
+        "Verify the four option labels/values.",
+        "Select az, za, lohi and hilo one at a time using the native dropdown.",
+        "After each selection compare all displayed values with the sorted baseline."
+      ],
+      "expected": [
+        "Options are Name (A to Z)/az, Name (Z to A)/za, Price (low to high)/lohi, Price (high to low)/hilo.",
+        "Names are in actual ascending/descending order.",
+        "Prices are numerically ascending/descending, including equal prices."
+      ],
+      "title": "all four dropdown choices sort actual names and numeric prices",
+      "suite": "inventory",
+      "requirement": "INV-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/inventory/inventory.spec.ts",
+        "title": "[INV-02] all four dropdown choices sort actual names and numeric prices",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-016",
+      "steps": [
+        "Record inventory name, description and price for every product.",
+        "Open each product detail screen in turn.",
+        "Compare detail fields with the recorded card.",
+        "Click Back to products after each comparison."
+      ],
+      "expected": [
+        "Detail URL includes inventory-item.html?id=<number>.",
+        "Name, description and price match the inventory card for all six products.",
+        "Back returns to the six-product catalog."
+      ],
+      "title": "every product detail matches its inventory card and back returns",
+      "suite": "inventory",
+      "requirement": "INV-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/inventory/inventory.spec.ts",
+        "title": "[INV-01] every product detail matches its inventory card and back returns",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-017",
+      "steps": [
+        "Record Backpack card data and open its details.",
+        "Add Backpack and verify badge; remove it and verify badge disappears.",
+        "Add it again and return to products.",
+        "Check its Remove button, then open cart and compare product data."
+      ],
+      "expected": [
+        "Badge is 1 after add and absent after remove.",
+        "Inventory reflects selected state after returning.",
+        "Cart contains the same Backpack name, description and price."
+      ],
+      "title": "details add/remove stays consistent with inventory and cart",
+      "suite": "inventory",
+      "requirement": "CART-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/inventory/inventory.spec.ts",
+        "title": "[CART-01] details add/remove stays consistent with inventory and cart",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-034",
+      "steps": [
+        "Open Menu from inventory.",
+        "Inspect About href and Logout visibility.",
+        "Close Menu and inspect Logout visibility.",
+        "Open cart, then Menu > All Items."
+      ],
+      "expected": [
+        "About href is https://saucelabs.com/.",
+        "Logout is visible only while menu is open.",
+        "All Items returns to six products."
+      ],
+      "notes": "About destination is checked as a link; the external site is not exercised.",
+      "title": "menu opens, closes, links to About and returns to All Items",
+      "suite": "navigation",
+      "requirement": "NAV-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/navigation/navigation.spec.ts",
+        "title": "[NAV-01] menu opens, closes, links to About and returns to All Items",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-035",
+      "steps": [
+        "Add Backpack and Bike Light.",
+        "Open Menu > Reset App State and close menu.",
+        "Refresh inventory and inspect both product actions.",
+        "Open cart."
+      ],
+      "expected": [
+        "Badge clears.",
+        "Both products expose Add to cart after refresh.",
+        "Cart is empty."
+      ],
+      "title": "reset clears cart after navigation and refresh",
+      "suite": "navigation",
+      "requirement": "NAV-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/navigation/navigation.spec.ts",
+        "title": "[NAV-01] reset clears cart after navigation and refresh",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-036",
+      "steps": [
+        "Open Backpack details and add it.",
+        "Use browser Back and inspect inventory.",
+        "Use Forward and inspect Backpack details.",
+        "Open cart and refresh."
+      ],
+      "expected": [
+        "Back shows six inventory products.",
+        "Forward restores Backpack details.",
+        "Refreshed cart contains Backpack."
+      ],
+      "title": "browser back and forward retain selected product and cart",
+      "suite": "navigation",
+      "requirement": "NAV-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/ui/navigation/navigation.spec.ts",
+        "title": "[NAV-01] browser back and forward retain selected product and cart",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-028",
+      "steps": [
+        "Sign in, add Backpack, open cart > Checkout.",
+        "Fill customer details with only the specified field empty.",
+        "Click Continue."
+      ],
+      "expected": ["Error contains First Name is required.", "URL remains checkout-step-one.html."],
+      "data": "First Name: Ada; Last Name: Lovelace; Postal Code: 560001; override firstName with empty string",
+      "title": "missing firstName blocks checkout",
+      "suite": "checkout",
+      "requirement": "CHECK-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/negative/checkout.spec.ts",
+        "title": "[CHECK-01] missing firstName blocks checkout",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-029",
+      "steps": [
+        "Sign in, add Backpack, open cart > Checkout.",
+        "Fill customer details with only the specified field empty.",
+        "Click Continue."
+      ],
+      "expected": ["Error contains Last Name is required.", "URL remains checkout-step-one.html."],
+      "data": "First Name: Ada; Last Name: Lovelace; Postal Code: 560001; override lastName with empty string",
+      "title": "missing lastName blocks checkout",
+      "suite": "checkout",
+      "requirement": "CHECK-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/negative/checkout.spec.ts",
+        "title": "[CHECK-01] missing lastName blocks checkout",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-030",
+      "steps": [
+        "Sign in, add Backpack, open cart > Checkout.",
+        "Fill customer details with only the specified field empty.",
+        "Click Continue."
+      ],
+      "expected": [
+        "Error contains Postal Code is required.",
+        "URL remains checkout-step-one.html."
+      ],
+      "data": "First Name: Ada; Last Name: Lovelace; Postal Code: 560001; override postalCode with empty string",
+      "title": "missing postalCode blocks checkout",
+      "suite": "checkout",
+      "requirement": "CHECK-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/negative/checkout.spec.ts",
+        "title": "[CHECK-01] missing postalCode blocks checkout",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-031",
+      "steps": [
+        "Sign in, add Backpack and open Checkout.",
+        "Fill the specified boundary values.",
+        "Click Continue."
+      ],
+      "expected": ["Checkout advances to checkout-step-two.html."],
+      "data": "First Name: Zoë; Last Name: O'Connor-李; Postal Code: SW1A 1AA",
+      "notes": "Documents actual nonempty-field behavior; this is not a claim of robust name/postal validation or a fabricated defect.",
+      "title": "observes Unicode and special characters",
+      "suite": "checkout",
+      "requirement": "CHECK-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/negative/checkout.spec.ts",
+        "title": "[CHECK-01] observes Unicode and special characters",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-032",
+      "steps": [
+        "Sign in, add Backpack and open Checkout.",
+        "Fill the specified boundary values.",
+        "Click Continue."
+      ],
+      "expected": ["Checkout advances to checkout-step-two.html."],
+      "data": "First Name: A × 256; Last Name: B × 256; Postal Code: P × 256",
+      "notes": "Documents actual nonempty-field behavior; this is not a claim of robust name/postal validation or a fabricated defect.",
+      "title": "observes long nonempty values",
+      "suite": "checkout",
+      "requirement": "CHECK-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/negative/checkout.spec.ts",
+        "title": "[CHECK-01] observes long nonempty values",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-033",
+      "steps": [
+        "Sign in, add Backpack and open Checkout.",
+        "Fill the specified boundary values.",
+        "Click Continue."
+      ],
+      "expected": ["Checkout advances to checkout-step-two.html."],
+      "data": "Each field contains exactly three spaces",
+      "notes": "Documents actual nonempty-field behavior; this is not a claim of robust name/postal validation or a fabricated defect.",
+      "title": "observes whitespace-only fields (observed demo behavior)",
+      "suite": "checkout",
+      "requirement": "CHECK-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context signed in as standard_user; empty initial cart; SauceDemo reachable.",
+      "automation": {
+        "file": "tests/ui/negative/checkout.spec.ts",
+        "title": "[CHECK-01] observes whitespace-only fields (observed demo behavior)",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-005",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Username and password do not match.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"unknown_user\"; Password: \"secret_sauce\"",
+      "title": "rejects wrong username",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects wrong username",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-006",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Username and password do not match.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"standard_user\"; Password: \"incorrect\"",
+      "title": "rejects wrong password",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects wrong password",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-007",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Username is required.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"\"; Password: \"secret_sauce\"",
+      "title": "rejects missing username",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects missing username",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-008",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Password is required.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"standard_user\"; Password: \"\"",
+      "title": "rejects missing password",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects missing password",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-009",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Username is required.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"\"; Password: \"\"",
+      "title": "rejects both fields empty",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects both fields empty",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-010",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Sorry, this user has been locked out.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"locked_out_user\"; Password: \"secret_sauce\"",
+      "title": "rejects locked account",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects locked account",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-011",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Username and password do not match.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"three spaces\"; Password: \"three spaces\"",
+      "title": "rejects whitespace credentials",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects whitespace credentials",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-012",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Username and password do not match.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"<script>alert('qa')</script>\"; Password: \"!?<>\"",
+      "title": "rejects special characters",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects special characters",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-013",
+      "steps": [
+        "Open login in a fresh context.",
+        "Submit the specified username/password.",
+        "Check the error and absence of inventory cards.",
+        "Dismiss the error using its close button."
+      ],
+      "expected": [
+        "Error contains: Username and password do not match.",
+        "No inventory cards are present.",
+        "The dismissed error is removed."
+      ],
+      "data": "Username: \"u repeated 256 times\"; Password: \"secret_sauce\"",
+      "title": "rejects long username",
+      "suite": "authentication",
+      "requirement": "AUTH-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/negative/login.spec.ts",
+        "title": "[AUTH-02] rejects long username",
+        "project": "chromium",
+        "command": "npm run test:regression"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-037",
+      "steps": [
+        "Open login and sign in as performance_glitch_user.",
+        "Wait for six inventory cards using the configured generous timeout.",
+        "Record login duration in the test report."
+      ],
+      "expected": ["Six cards become visible.", "Measured duration is attached as an observation."],
+      "data": "performance_glitch_user / secret_sauce",
+      "notes": "45-second test budget and 20-second inventory assertion timeout; no load test or claimed performance SLA.",
+      "title": "performance persona reaches inventory with a generous timeout",
+      "suite": "personas",
+      "requirement": "PERS-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/personas/personas.spec.ts",
+        "title": "[PERS-01] performance persona reaches inventory with a generous timeout",
+        "project": "chromium",
+        "command": "npm run test:personas"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-038",
+      "steps": [
+        "Sign in as problem_user; add Backpack; open Checkout.",
+        "Fill Ada / Lovelace / 560001.",
+        "Inspect Last Name, then Continue; save screenshot."
+      ],
+      "expected": [
+        "Defect reproduction: Last Name stays empty.",
+        "Continue displays Last Name is required; reproduction screenshot is attached."
+      ],
+      "data": "problem_user / secret_sauce",
+      "notes": "Known defect DEF-01. Passing this check means reproduced, not correct product behavior.",
+      "title": "problem persona cannot retain last name and is blocked at checkout",
+      "suite": "personas",
+      "requirement": "DEF-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/personas/personas.spec.ts",
+        "title": "[DEF-01] problem persona cannot retain last name and is blocked at checkout",
+        "project": "chromium",
+        "command": "npm run test:personas"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "Known defect reproduced (not correct product behavior)",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-039",
+      "steps": [
+        "Sign in as error_user; add Backpack; open Checkout.",
+        "Fill Ada / Lovelace / 560001 and inspect Last Name.",
+        "Continue and save screenshot."
+      ],
+      "expected": [
+        "Defect reproduction: Last Name stays empty.",
+        "Despite empty Last Name, overview opens; screenshot is attached."
+      ],
+      "data": "error_user / secret_sauce",
+      "notes": "Known defect DEF-02; separate from the default gate.",
+      "title": "error persona advances with rejected empty last name",
+      "suite": "personas",
+      "requirement": "DEF-02",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/personas/personas.spec.ts",
+        "title": "[DEF-02] error persona advances with rejected empty last name",
+        "project": "chromium",
+        "command": "npm run test:personas"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "Known defect reproduced (not correct product behavior)",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-040",
+      "steps": [
+        "Sign in as standard_user; record Backpack image src.",
+        "Open login and sign in as visual_user.",
+        "Compare Backpack image src with the control value.",
+        "Attach both source strings."
+      ],
+      "expected": ["Defect reproduction: sources differ and visual_user source contains sl-404."],
+      "data": "standard_user then visual_user / secret_sauce",
+      "notes": "Known defect DEF-03; this is a source comparison, not the visual screenshot suite.",
+      "title": "visual persona substitutes the backpack image",
+      "suite": "personas",
+      "requirement": "DEF-03",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "automation": {
+        "file": "tests/ui/personas/personas.spec.ts",
+        "title": "[DEF-03] visual persona substitutes the backpack image",
+        "project": "chromium",
+        "command": "npm run test:personas"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "Known defect reproduced (not correct product behavior)",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-041",
+      "steps": [
+        "Use a fresh 390 × 844 mobile browser context.",
+        "Inspect Login in viewport; sign in; inspect sort control in viewport.",
+        "Add Backpack, open cart and Checkout.",
+        "Enter customer details; Continue; compare arithmetic; Finish.",
+        "Check confirmation and horizontal document overflow."
+      ],
+      "expected": [
+        "Login and sort controls are in viewport.",
+        "Cart contains one item; total equals displayed subtotal plus tax.",
+        "Confirmation is visible; document scrollWidth does not exceed innerWidth."
+      ],
+      "priority": "Critical",
+      "data": "standard_user / secret_sauce (public demo credentials); First Name: Ada; Last Name: Lovelace; Postal Code: 560001",
+      "preconditions": "Mobile Chromium project: 390 × 844, touch and mobile enabled.",
+      "title": "small mobile viewport supports login, cart and checkout",
+      "suite": "responsive",
+      "requirement": "RESP-01",
+      "automation": {
+        "file": "tests/ui/responsive/mobile.spec.ts",
+        "title": "[RESP-01] small mobile viewport supports login, cart and checkout",
+        "project": "mobile-chromium",
+        "command": "npm run test:smoke"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-049",
+      "steps": [
+        "Start an isolated local companion service/database.",
+        "GET /health; GET /products; GET /orders."
+      ],
+      "expected": [
+        "Health is 200 with {status:ok, service:independent-companion}.",
+        "Products is 200 with Companion Backpack (id 1, 2999 cents) and Companion Bike Light (id 2, 999 cents).",
+        "Initial order list is empty."
+      ],
+      "title": "health and deterministic products are independent of SauceDemo",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] health and deterministic products are independent of SauceDemo",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-050",
+      "steps": [
+        "POST /orders with valid order data.",
+        "Check response schema, totalCents and Location.",
+        "GET the created order.",
+        "PATCH status to completed.",
+        "DELETE the order, then GET it and list orders."
+      ],
+      "expected": [
+        "POST is 201 with a valid ID/status/customer/items/totalCents response and totalCents = 6997.",
+        "Location points to /orders/<id>; GET is 200 with the same body.",
+        "PATCH is 200 and status is completed.",
+        "DELETE is 204, subsequent GET is 404 and list is empty."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]",
+      "title": "create, read, update and delete order with calculated cents",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] create, read, update and delete order with calculated cents",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-051",
+      "steps": [
+        "POST a valid order into an isolated database.",
+        "Save the returned order; close the service and database.",
+        "Reopen the same SQLite file through OrderStore and fetch the order.",
+        "Close the reopened database."
+      ],
+      "expected": ["POST returns 201.", "Reopened SQLite returns the same persisted order."],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]",
+      "title": "SQLite order survives closing and reopening its database",
+      "suite": "api",
+      "requirement": "API-02",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-02] SQLite order survives closing and reopening its database",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-052",
+      "steps": [
+        "Start an isolated empty local companion database.",
+        "POST /orders with valid data modified by the specified invalid input.",
+        "Inspect response; GET /orders."
+      ],
+      "expected": [
+        "POST is 400 with an error property.",
+        "Order list remains empty; invalid data is not persisted."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]; override: items: []",
+      "title": "rejects empty items without persisting an order",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] rejects empty items without persisting an order",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-053",
+      "steps": [
+        "Start an isolated empty local companion database.",
+        "POST /orders with valid data modified by the specified invalid input.",
+        "Inspect response; GET /orders."
+      ],
+      "expected": [
+        "POST is 400 with an error property.",
+        "Order list remains empty; invalid data is not persisted."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]; override: productId 1, quantity 0",
+      "title": "rejects zero quantity without persisting an order",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] rejects zero quantity without persisting an order",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-054",
+      "steps": [
+        "Start an isolated empty local companion database.",
+        "POST /orders with valid data modified by the specified invalid input.",
+        "Inspect response; GET /orders."
+      ],
+      "expected": [
+        "POST is 400 with an error property.",
+        "Order list remains empty; invalid data is not persisted."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]; override: productId 1, quantity 1.5",
+      "title": "rejects fractional quantity without persisting an order",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] rejects fractional quantity without persisting an order",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-055",
+      "steps": [
+        "Start an isolated empty local companion database.",
+        "POST /orders with valid data modified by the specified invalid input.",
+        "Inspect response; GET /orders."
+      ],
+      "expected": [
+        "POST is 400 with an error property.",
+        "Order list remains empty; invalid data is not persisted."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]; override: productId 1, quantity 101",
+      "title": "rejects excess quantity without persisting an order",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] rejects excess quantity without persisting an order",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-056",
+      "steps": [
+        "Start an isolated empty local companion database.",
+        "POST /orders with valid data modified by the specified invalid input.",
+        "Inspect response; GET /orders."
+      ],
+      "expected": [
+        "POST is 400 with an error property.",
+        "Order list remains empty; invalid data is not persisted."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]; override: productId 999, quantity 1",
+      "title": "rejects unknown product without persisting an order",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] rejects unknown product without persisting an order",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-057",
+      "steps": [
+        "Start an isolated empty local companion database.",
+        "POST /orders with valid data modified by the specified invalid input.",
+        "Inspect response; GET /orders."
+      ],
+      "expected": [
+        "POST is 400 with an error property.",
+        "Order list remains empty; invalid data is not persisted."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]; override: productId 1 appears twice, quantities 1 and 2",
+      "title": "rejects duplicate product without persisting an order",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] rejects duplicate product without persisting an order",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-058",
+      "steps": [
+        "Start an isolated empty local companion database.",
+        "POST /orders with valid data modified by the specified invalid input.",
+        "Inspect response; GET /orders."
+      ],
+      "expected": [
+        "POST is 400 with an error property.",
+        "Order list remains empty; invalid data is not persisted."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]; override: firstName contains three spaces",
+      "title": "rejects blank customer without persisting an order",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] rejects blank customer without persisting an order",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-059",
+      "steps": [
+        "Start an isolated empty local companion database.",
+        "POST /orders with valid data modified by the specified invalid input.",
+        "Inspect response; GET /orders."
+      ],
+      "expected": [
+        "POST is 400 with an error property.",
+        "Order list remains empty; invalid data is not persisted."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]; override: extra top-level admin: true",
+      "title": "rejects unexpected property without persisting an order",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] rejects unexpected property without persisting an order",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-060",
+      "steps": [
+        "POST /orders with {broken as application/json.",
+        "POST plain text with its default media type.",
+        "POST JSON containing a 17000-character value.",
+        "GET /unknown; PUT /products."
+      ],
+      "expected": ["Responses are respectively 400, 415, 413, 404 and 405."],
+      "title": "malformed JSON, media type, payload size and routes return explicit errors",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] malformed JSON, media type, payload size and routes return explicit errors",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-061",
+      "steps": [
+        "Create a valid order.",
+        "PATCH its status to fake, then GET it.",
+        "GET /orders/0.",
+        "PATCH and DELETE /orders/999."
+      ],
+      "expected": [
+        "Invalid PATCH is 400 and the existing order is unchanged.",
+        "Invalid ID 0 is 400.",
+        "Nonexistent PATCH and DELETE are 404."
+      ],
+      "data": "Customer Ada / Lovelace / 560001; items [{productId:1, quantity:2}, {productId:2, quantity:1}]",
+      "title": "invalid updates and nonexistent order operations do not change persisted state",
+      "suite": "api",
+      "requirement": "API-01",
+      "priority": "Normal",
+      "preconditions": "Node 24; a fresh fixture-owned companion database and loopback service. This is not SauceDemo backend testing.",
+      "automation": {
+        "file": "tests/api/orders.spec.ts",
+        "title": "[API-01] invalid updates and nonexistent order operations do not change persisted state",
+        "project": "api",
+        "command": "npm run test:api"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-077",
+      "steps": [
+        "Explicitly set RUN_LOCAL_AI=1 and OLLAMA_MODEL to an already-installed local model.",
+        "Run npm run test:ai:live.",
+        "Request a schema-constrained suggestion for AUTH-01 and validate output.",
+        "Attach returned suggestions for human review."
+      ],
+      "expected": [
+        "At least one valid, traceable suggestion is returned when configured.",
+        "Without opt-in/model, the check is explicitly skipped."
+      ],
+      "preconditions": "Optional running loopback Ollama with an installed model; never required for default CI.",
+      "notes": "Latest result is skipped; no live LLM output or generated scenario execution is claimed.",
+      "title": "optional live local Ollama suggestion evaluation",
+      "suite": "ai",
+      "requirement": "AI-03",
+      "priority": "Normal",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/local-live.spec.ts",
+        "title": "[AI-03] optional live local Ollama suggestion evaluation",
+        "project": "ai",
+        "command": "npm run test:ai:live"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "skipped",
+        "interpretation": "skipped",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "skipped",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-062",
+      "steps": [
+        "Use test-data/mock-suggestions.json and the INV-02 test requirement.",
+        "Call suggest with MockProvider.",
+        "Compare the parsed response to the mock."
+      ],
+      "expected": ["Schema-validated output equals the mock and references INV-02."],
+      "data": "Deterministic mock; no live model/network request.",
+      "title": "deterministic provider produces schema-validated traceable suggestions",
+      "suite": "ai",
+      "requirement": "AI-01",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-01] deterministic provider produces schema-validated traceable suggestions",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-063",
+      "steps": [
+        "Call parseSuggestions with {bad.",
+        "Call it with otherwise-valid JSON wrapped in markdown code fences."
+      ],
+      "expected": ["Both inputs throw malformed JSON."],
+      "title": "malformed JSON and markdown code fences are rejected",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] malformed JSON and markdown code fences are rejected",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-064",
+      "steps": [
+        "Use a valid INV-02 requirement and mock scenario.",
+        "Apply the specified invalid schema mutation and serialize as JSON.",
+        "Call parseSuggestions."
+      ],
+      "expected": ["Invalid scenario schema is thrown."],
+      "data": "{}",
+      "title": "rejects missing scenarios",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] rejects missing scenarios",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-065",
+      "steps": [
+        "Use a valid INV-02 requirement and mock scenario.",
+        "Apply the specified invalid schema mutation and serialize as JSON.",
+        "Call parseSuggestions."
+      ],
+      "expected": ["Invalid scenario schema is thrown."],
+      "data": "{scenarios:[]}",
+      "title": "rejects empty scenarios",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] rejects empty scenarios",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-066",
+      "steps": [
+        "Use a valid INV-02 requirement and mock scenario.",
+        "Apply the specified invalid schema mutation and serialize as JSON.",
+        "Call parseSuggestions."
+      ],
+      "expected": ["Invalid scenario schema is thrown."],
+      "data": "priority: urgent",
+      "title": "rejects invalid priority",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] rejects invalid priority",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-067",
+      "steps": [
+        "Use a valid INV-02 requirement and mock scenario.",
+        "Apply the specified invalid schema mutation and serialize as JSON.",
+        "Call parseSuggestions."
+      ],
+      "expected": ["Invalid scenario schema is thrown."],
+      "data": "extra code: execute()",
+      "title": "rejects unexpected generated code",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] rejects unexpected generated code",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-068",
+      "steps": [
+        "Use a valid INV-02 requirement and mock scenario.",
+        "Apply the specified invalid schema mutation and serialize as JSON.",
+        "Call parseSuggestions."
+      ],
+      "expected": ["Invalid scenario schema is thrown."],
+      "data": "steps: []",
+      "title": "rejects empty steps",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] rejects empty steps",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-069",
+      "steps": [
+        "Use a valid INV-02 requirement and mock scenario.",
+        "Apply the specified invalid schema mutation and serialize as JSON.",
+        "Call parseSuggestions."
+      ],
+      "expected": ["Invalid scenario schema is thrown."],
+      "data": "title: five spaces",
+      "title": "rejects whitespace title",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] rejects whitespace title",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-070",
+      "steps": [
+        "Call suggest with no requirements.",
+        "Call it with id invented and an empty description.",
+        "Call it with a duplicated INV-02 requirement."
+      ],
+      "expected": [
+        "Errors identify missing requirements, invalid requirement, and duplicate requirement ID."
+      ],
+      "title": "missing, malformed and duplicate requirements fail before calling provider",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] missing, malformed and duplicate requirements fail before calling provider",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-071",
+      "steps": [
+        "Parse a scenario referencing FAKE-01 against only INV-02.",
+        "Parse a list containing the same S-001 scenario twice."
+      ],
+      "expected": ["Unknown requirement reference and Duplicate scenario ID errors are thrown."],
+      "title": "unknown requirements and duplicate scenario IDs are rejected",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] unknown requirements and duplicate scenario IDs are rejected",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-072",
+      "steps": [
+        "Provide the mock S-001 scenario plus S-002 with the same requirement IDs and uppercase/padded equivalent title.",
+        "Parse suggestions."
+      ],
+      "expected": ["Only the original mock scenario remains."],
+      "notes": "Title/requirement normalization only; semantic equivalence detection is not claimed.",
+      "title": "equivalent suggestion titles are deduplicated deterministically",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] equivalent suggestion titles are deduplicated deterministically",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-073",
+      "steps": [
+        "Validate the mock suggestions.",
+        "Attempt approval with empty reviewer, empty selection, and unknown S-999.",
+        "Approve with a nonempty reviewer and S-001 in the deterministic adapter test."
+      ],
+      "expected": [
+        "Invalid approvals throw explicit errors.",
+        "Valid selection returns the chosen suggestion data only."
+      ],
+      "notes": "Unit test for the approval adapter, not actual human approval of live proposals; no test code is generated/executed.",
+      "title": "approved suggestions require reviewer and explicit valid selection",
+      "suite": "ai",
+      "requirement": "AI-03",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-03] approved suggestions require reviewer and explicit valid selection",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-074",
+      "steps": [
+        "Inject a mock fetch transport returning the valid mock JSON response.",
+        "Call the local provider with model mock-local-model.",
+        "Inspect request URL, schema, stream flag and result."
+      ],
+      "expected": [
+        "One request targets http://127.0.0.1:11434/api/generate with model name, stream:false and object JSON schema.",
+        "Parsed suggestions equal the mock."
+      ],
+      "notes": "Transport is mocked; no real Ollama process/model was used.",
+      "title": "local adapter sends schema and parses mocked Ollama response",
+      "suite": "ai",
+      "requirement": "AI-01",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-01] local adapter sends schema and parses mocked Ollama response",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-075",
+      "steps": [
+        "Inject HTTP 503 response, then a body with no response text.",
+        "Construct provider with https://paid.example.com.",
+        "Construct provider with an empty model name."
+      ],
+      "expected": [
+        "Errors identify HTTP 503, missing response text, nonlocal endpoint and missing OLLAMA_MODEL."
+      ],
+      "notes": "Nonlocal provider construction is rejected; no paid endpoint is contacted.",
+      "title": "adapter rejects HTTP failures, missing response text and nonlocal endpoints",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] adapter rejects HTTP failures, missing response text and nonlocal endpoints",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-076",
+      "steps": ["Pass 100001 characters to parseSuggestions with valid requirements."],
+      "expected": ["Model output too large is thrown before parsing."],
+      "title": "excessive output is rejected before JSON parsing",
+      "suite": "ai",
+      "requirement": "AI-02",
+      "priority": "Normal",
+      "preconditions": "Node runtime; valid INV-02 requirement and deterministic mock data unless stated otherwise.",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/ai/scenarios.spec.ts",
+        "title": "[AI-02] excessive output is rejected before JSON parsing",
+        "project": "ai",
+        "command": "npm run test:ai"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-042",
+      "steps": [
+        "Open login in a fresh context.",
+        "Run axe with wcag2a, wcag2aa, wcag21a and wcag21aa tags.",
+        "Attach the full scan JSON and inspect violations."
+      ],
+      "expected": ["No violations are returned for the selected tags on this scanned page state."],
+      "notes": "Limited automated audit only; no full accessibility certification or manual assistive-technology coverage.",
+      "title": "WCAG-oriented audit of login",
+      "suite": "accessibility",
+      "requirement": "A11Y-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/accessibility/audit.spec.ts",
+        "title": "[A11Y-01] WCAG-oriented audit of login",
+        "project": "accessibility",
+        "command": "npm run test:accessibility"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-043",
+      "steps": [
+        "Open login in a fresh context.",
+        "Sign in as standard_user.",
+        "Run axe with wcag2a, wcag2aa, wcag21a and wcag21aa tags.",
+        "Attach the full scan JSON and inspect violations."
+      ],
+      "expected": ["No violations are returned for the selected tags on this scanned page state."],
+      "notes": "Limited automated audit only; no full accessibility certification or manual assistive-technology coverage.",
+      "title": "WCAG-oriented audit of inventory",
+      "suite": "accessibility",
+      "requirement": "A11Y-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/accessibility/audit.spec.ts",
+        "title": "[A11Y-01] WCAG-oriented audit of inventory",
+        "project": "accessibility",
+        "command": "npm run test:accessibility"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-044",
+      "steps": [
+        "Open login in a fresh context.",
+        "Sign in as standard_user.",
+        "Open an empty cart.",
+        "Run axe with wcag2a, wcag2aa, wcag21a and wcag21aa tags.",
+        "Attach the full scan JSON and inspect violations."
+      ],
+      "expected": ["No violations are returned for the selected tags on this scanned page state."],
+      "notes": "Limited automated audit only; no full accessibility certification or manual assistive-technology coverage.",
+      "title": "WCAG-oriented audit of cart",
+      "suite": "accessibility",
+      "requirement": "A11Y-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/accessibility/audit.spec.ts",
+        "title": "[A11Y-01] WCAG-oriented audit of cart",
+        "project": "accessibility",
+        "command": "npm run test:accessibility"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-045",
+      "steps": [
+        "Open login in a fresh context.",
+        "Sign in as standard_user.",
+        "Open an empty cart.",
+        "Click Checkout.",
+        "Run axe with wcag2a, wcag2aa, wcag21a and wcag21aa tags.",
+        "Attach the full scan JSON and inspect violations."
+      ],
+      "expected": ["No violations are returned for the selected tags on this scanned page state."],
+      "notes": "Limited automated audit only; no full accessibility certification or manual assistive-technology coverage.",
+      "title": "WCAG-oriented audit of checkout",
+      "suite": "accessibility",
+      "requirement": "A11Y-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/accessibility/audit.spec.ts",
+        "title": "[A11Y-01] WCAG-oriented audit of checkout",
+        "project": "accessibility",
+        "command": "npm run test:accessibility"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-046",
+      "steps": [
+        "Open login in a fresh context.",
+        "Press Tab three times, checking focus after each press."
+      ],
+      "expected": ["Focus order is Username → Password → Login."],
+      "title": "login controls follow keyboard focus order",
+      "suite": "accessibility",
+      "requirement": "A11Y-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/accessibility/audit.spec.ts",
+        "title": "[A11Y-01] login controls follow keyboard focus order",
+        "project": "accessibility",
+        "command": "npm run test:accessibility"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      },
+      "notes": ""
+    },
+    {
+      "id": "TC-047",
+      "steps": [
+        "Open login.",
+        "Use the visual project fixed viewport/locale/timezone/color scheme; wait for fonts and images.",
+        "Take a full-page screenshot with animations disabled.",
+        "Compare against the existing OS/project-specific baseline with baseline updates disabled."
+      ],
+      "expected": ["Screenshot matches the reviewed baseline within maxDiffPixels = 100."],
+      "notes": "The existing Windows baselines were created headlessly. Latest headed run failed both comparisons; inventory actual width was 1425 vs expected 1440. Baselines were not replaced. Earlier headless portfolio comparisons passed.",
+      "title": "stable login appearance",
+      "suite": "visual",
+      "requirement": "VIS-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/visual/screens.spec.ts",
+        "title": "[VIS-01] stable login appearance",
+        "project": "visual",
+        "command": "npm run test:visual"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "failed",
+        "interpretation": "failed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-048",
+      "steps": [
+        "Open login and sign in to inventory.",
+        "Use the visual project fixed viewport/locale/timezone/color scheme; wait for fonts and images.",
+        "Take a full-page screenshot with animations disabled.",
+        "Compare against the existing OS/project-specific baseline with baseline updates disabled."
+      ],
+      "expected": ["Screenshot matches the reviewed baseline within maxDiffPixels = 100."],
+      "notes": "The existing Windows baselines were created headlessly. Latest headed run failed both comparisons; inventory actual width was 1425 vs expected 1440. Baselines were not replaced. Earlier headless portfolio comparisons passed.",
+      "title": "stable inventory appearance",
+      "suite": "visual",
+      "requirement": "VIS-01",
+      "priority": "Normal",
+      "preconditions": "Fresh browser context; SauceDemo reachable. Follow the case-specific login steps.",
+      "data": "standard_user / secret_sauce (public demo credentials); use fixture-isolated state.",
+      "automation": {
+        "file": "tests/visual/screens.spec.ts",
+        "title": "[VIS-01] stable inventory appearance",
+        "project": "visual",
+        "command": "npm run test:visual"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "failed",
+        "interpretation": "failed",
+        "startedAt": "2026-10-08T14:16:40.074Z",
+        "evidence": "docs/evidence/headed-portfolio-execution.json"
+      },
+      "priorHeadlessExecution": {
+        "status": "passed",
+        "evidence": "docs/evidence/portfolio-execution.json"
+      }
+    },
+    {
+      "id": "TC-078",
+      "steps": ["Open https://playwright.dev/.", "Read the document title."],
+      "expected": ["Title contains Playwright."],
+      "preconditions": "Fresh context; external Playwright documentation site reachable.",
+      "title": "has title",
+      "suite": "examples",
+      "requirement": "N/A - starter example",
+      "priority": "Normal",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/example.spec.ts",
+        "title": "has title",
+        "project": "examples",
+        "command": "npm run test:examples"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:18:44.103Z",
+        "evidence": "docs/evidence/headed-examples-execution.json"
+      },
+      "priorHeadlessExecution": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-079",
+      "steps": [
+        "Open https://playwright.dev/.",
+        "Click the Get started link.",
+        "Inspect the Installation heading."
+      ],
+      "expected": ["Installation heading is visible."],
+      "preconditions": "Fresh context; external Playwright documentation site reachable.",
+      "title": "get started link",
+      "suite": "examples",
+      "requirement": "N/A - starter example",
+      "priority": "Normal",
+      "data": "See case steps and automation source.",
+      "automation": {
+        "file": "tests/example.spec.ts",
+        "title": "get started link",
+        "project": "examples",
+        "command": "npm run test:examples"
+      },
+      "latestExecution": {
+        "mode": "headed browser projects / Node-only API and AI",
+        "status": "passed",
+        "interpretation": "passed",
+        "startedAt": "2026-10-08T14:18:44.103Z",
+        "evidence": "docs/evidence/headed-examples-execution.json"
+      },
+      "priorHeadlessExecution": null,
+      "notes": ""
+    }
+  ]
+}

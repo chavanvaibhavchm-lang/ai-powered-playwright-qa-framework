@@ -1,0 +1,39 @@
+{
+  "recordedAt": "2026-10-08T14:18:49.661Z",
+  "stats": {
+    "startTime": "2026-10-08T14:18:44.103Z",
+    "duration": 5271.078,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "has title",
+      "file": "example.spec.ts",
+      "project": "examples",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3138,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "title": "get started link",
+      "file": "example.spec.ts",
+      "project": "examples",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3588,
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}

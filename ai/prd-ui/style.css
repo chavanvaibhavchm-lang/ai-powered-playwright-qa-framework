@@ -1,0 +1,121 @@
+body {
+  font: 16px system-ui;
+  background: #f4f6fa;
+  color: #182235;
+  margin: 0;
+}
+main {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+}
+button,
+select,
+input,
+textarea {
+  font: inherit;
+  padding: 10px;
+}
+button {
+  background: #244fc3;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+.table {
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+}
+textarea {
+  width: 280px;
+  min-height: 100px;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #f4f6fa;
+  padding: 16px;
+}
+.error {
+  color: #b42318;
+}
+small {
+  display: block;
+  max-width: 250px;
+  white-space: pre-wrap;
+}
+
+.loading-panel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  margin: 12px 0;
+  background: #eaf0ff;
+  border: 1px solid #244fc3;
+  border-radius: 6px;
+}
+.loading-panel[hidden] {
+  display: none;
+}
+.spinner {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  border: 3px solid #b8c8f2;
+  border-top-color: #244fc3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.task-status {
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid currentColor;
+}
+.task-status:empty {
+  display: none;
+}
+.task-status.working {
+  background: #eaf0ff;
+  color: #244fc3;
+}
+.task-status.success {
+  background: #ecfdf3;
+  color: #067647;
+}
+.task-status.error {
+  background: #fff0ee;
+  color: #b42318;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}

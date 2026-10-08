@@ -1,0 +1,121 @@
+{
+  "recordedAt": "2026-10-08T13:49:17.040Z",
+  "stats": {
+    "startTime": "2026-10-08T13:49:11.248Z",
+    "duration": 5623.455,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "[VIS-01] stable login appearance",
+      "file": "visual/screens.spec.ts",
+      "project": "visual",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3198,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "login-expected.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "login-actual.png",
+              "contentType": "image/png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[VIS-01] stable inventory appearance",
+      "file": "visual/screens.spec.ts",
+      "project": "visual",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4141,
+          "attachments": [
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "Allure Metadata (metadata)",
+              "contentType": "application/vnd.allure.message+json"
+            },
+            {
+              "name": "inventory-expected.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "inventory-actual.png",
+              "contentType": "image/png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
